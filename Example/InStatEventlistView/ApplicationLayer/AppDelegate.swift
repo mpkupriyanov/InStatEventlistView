@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  InStatEventlistView
 //
-//  Created by tularovbeslan@gmail.com on 03/01/2019.
-//  Copyright (c) 2019 tularovbeslan@gmail.com. All rights reserved.
-//
 
 import UIKit
 

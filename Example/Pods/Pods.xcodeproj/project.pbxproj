@@ -13,6 +13,7 @@
 		570EAA172228C17000D14929 /* InStatEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA162228C17000D14929 /* InStatEventCell.swift */; };
 		570EAA192228C19100D14929 /* InStatEpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA182228C19100D14929 /* InStatEpisodeCell.swift */; };
 		570EAA1B2228C1AD00D14929 /* InStatEventlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA1A2228C1AD00D14929 /* InStatEventlistView.swift */; };
+		570EAA482228E1C400D14929 /* InStatEventlistViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570EAA472228E1C400D14929 /* InStatEventlistViewAssets.xcassets */; };
 		789FE4FAF1F686457FBEEB34B56895F4 /* Pods-InStatEventlistView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */; };
 		97D82DD6FCC17FBFC3E7A69BDF4522DE /* Pods-InStatEventlistView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB2B5438D61081A8F3CC6107671B799 /* Pods-InStatEventlistView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9A73296D2CFD4542EC085EE8A7C66A4E /* Pods-InStatEventlistView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F3B0464211676C8826FB015A1A01B5 /* Pods-InStatEventlistView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +61,7 @@
 		570EAA162228C17000D14929 /* InStatEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEventCell.swift; sourceTree = "<group>"; };
 		570EAA182228C19100D14929 /* InStatEpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEpisodeCell.swift; sourceTree = "<group>"; };
 		570EAA1A2228C1AD00D14929 /* InStatEventlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEventlistView.swift; sourceTree = "<group>"; };
+		570EAA472228E1C400D14929 /* InStatEventlistViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = InStatEventlistViewAssets.xcassets; sourceTree = "<group>"; };
 		615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InStatEventlistView_Example-dummy.m"; sourceTree = "<group>"; };
 		648617CF456033453555B2F6A5DD8708 /* InStatEventlistView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InStatEventlistView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4F04F5FD0000F20417DCCEAD47DE9 /* Pods-InStatEventlistView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,15 @@
 			path = InStatEventlistView/Classes;
 			sourceTree = "<group>";
 		};
+		570EAA462228E16700D14929 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				570EAA472228E1C400D14929 /* InStatEventlistViewAssets.xcassets */,
+			);
+			name = Assets;
+			path = InStatEventlistView/Assets;
+			sourceTree = "<group>";
+		};
 		6462FF246E416AD140C0CAA5856947FE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +166,7 @@
 		AC50145B292B5E04A534F764F5887806 /* InStatEventlistView */ = {
 			isa = PBXGroup;
 			children = (
+				570EAA462228E16700D14929 /* Assets */,
 				570EAA1C2228C1D900D14929 /* Classes */,
 				E031EFEA6358DA8E6F958B8A9BD6B659 /* Pod */,
 				ACB5EF5C98AE24159F489CB2B1A3A115 /* Support Files */,
@@ -390,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				570EAA482228E1C400D14929 /* InStatEventlistViewAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
