@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C49A2AE6FFFEFEBB44D74A331FB588 /* Pods-InStatEventlistView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF88065D4F831A6F7369C063A6B49B1 /* Pods-InStatEventlistView_Tests-dummy.m */; };
+		570EAA132228C12500D14929 /* InStatEventlistProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA122228C12500D14929 /* InStatEventlistProtocols.swift */; };
+		570EAA152228C14E00D14929 /* InStatPickerPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA142228C14E00D14929 /* InStatPickerPort.swift */; };
+		570EAA172228C17000D14929 /* InStatEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA162228C17000D14929 /* InStatEventCell.swift */; };
+		570EAA192228C19100D14929 /* InStatEpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA182228C19100D14929 /* InStatEpisodeCell.swift */; };
+		570EAA1B2228C1AD00D14929 /* InStatEventlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570EAA1A2228C1AD00D14929 /* InStatEventlistView.swift */; };
+		789FE4FAF1F686457FBEEB34B56895F4 /* Pods-InStatEventlistView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */; };
+		97D82DD6FCC17FBFC3E7A69BDF4522DE /* Pods-InStatEventlistView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB2B5438D61081A8F3CC6107671B799 /* Pods-InStatEventlistView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A73296D2CFD4542EC085EE8A7C66A4E /* Pods-InStatEventlistView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F3B0464211676C8826FB015A1A01B5 /* Pods-InStatEventlistView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B84BCA0C7EA3DC5F0F6E0706E75BA39 /* InStatEventlistView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 100D31642D6527B2BC21F32879E6C19D /* InStatEventlistView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EFD1AECCE4BCF76885A9C5BBC8FB53F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A2E88EAECAFAE083FF8D749A71736240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		CE9DD69CE68AC7462EC0DFF482D6EDF8 /* InStatEventlistView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 382343924DFF496F3D53A1B80A0442F2 /* InStatEventlistView-dummy.m */; };
+		DC3C6A325227F7B81C0277DCAC31DA71 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49EBA3B39DFCEFCAB14D718130732754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D3D255BEB3E4B6F57EE02FB63A5863;
+			remoteInfo = InStatEventlistView;
+		};
+		A4EE9BB2D5D3D061CD4505B37052EDE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB1E16A939465199A6D6ADDC7B094CF6;
+			remoteInfo = "Pods-InStatEventlistView_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0181C4E4E974A16CD172CDE90E7716C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		07EE01979DEF31B3EC7BF616CC3081DE /* InStatEventlistView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-prefix.pch"; sourceTree = "<group>"; };
+		07F297D87B6B6157E9B2883A5B0AE162 /* Pods-InStatEventlistView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InStatEventlistView_Tests.modulemap"; sourceTree = "<group>"; };
+		100D31642D6527B2BC21F32879E6C19D /* InStatEventlistView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-umbrella.h"; sourceTree = "<group>"; };
+		25D3AC5AF24587C0FF2BECD1D3100202 /* InStatEventlistView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatEventlistView-Info.plist"; sourceTree = "<group>"; };
+		2925F39D2A26C017DF6A95AE16FC1EEE /* Pods-InStatEventlistView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InStatEventlistView_Example.modulemap"; sourceTree = "<group>"; };
+		2C0D5E767568EFF699F7DDC33A9E049D /* Pods-InStatEventlistView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2FF88065D4F831A6F7369C063A6B49B1 /* Pods-InStatEventlistView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InStatEventlistView_Tests-dummy.m"; sourceTree = "<group>"; };
+		351D7A91C06F957C09F9490F03ACDF40 /* Pods_InStatEventlistView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InStatEventlistView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		382343924DFF496F3D53A1B80A0442F2 /* InStatEventlistView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InStatEventlistView-dummy.m"; sourceTree = "<group>"; };
+		3D288C7E490CD3AB020BE9DC88CE3B48 /* Pods-InStatEventlistView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InStatEventlistView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		40A937B6F7BD4D9470EE3882B6BC2CD1 /* Pods-InStatEventlistView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Example-Info.plist"; sourceTree = "<group>"; };
+		463AF5BA8F9BC5BDB3214D0BF071A608 /* Pods-InStatEventlistView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Tests-Info.plist"; sourceTree = "<group>"; };
+		492E8E94E87EDD31BEB294A416615B43 /* Pods_InStatEventlistView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InStatEventlistView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		570EAA122228C12500D14929 /* InStatEventlistProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEventlistProtocols.swift; sourceTree = "<group>"; };
+		570EAA142228C14E00D14929 /* InStatPickerPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatPickerPort.swift; sourceTree = "<group>"; };
+		570EAA162228C17000D14929 /* InStatEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEventCell.swift; sourceTree = "<group>"; };
+		570EAA182228C19100D14929 /* InStatEpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEpisodeCell.swift; sourceTree = "<group>"; };
+		570EAA1A2228C1AD00D14929 /* InStatEventlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InStatEventlistView.swift; sourceTree = "<group>"; };
+		615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InStatEventlistView_Example-dummy.m"; sourceTree = "<group>"; };
+		648617CF456033453555B2F6A5DD8708 /* InStatEventlistView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InStatEventlistView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B4F04F5FD0000F20417DCCEAD47DE9 /* Pods-InStatEventlistView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		85CB0B6B30CB36D656E2D880CAD68E52 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A76A5DFDC03293B0655A07837EA7FE82 /* Pods-InStatEventlistView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InStatEventlistView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D4C50136C2F0FAF55639212AFCD02A5E /* Pods-InStatEventlistView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D70DDD76DDB0596266678DF377E0D2FE /* Pods-InStatEventlistView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E0BA1FCE92568002F79B3A7263E406FF /* Pods-InStatEventlistView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5CF082820D6E009B81C9B975C23C111 /* InStatEventlistView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InStatEventlistView.modulemap; sourceTree = "<group>"; };
+		E9D103569D5B3E55A418EF7800FFFA54 /* InStatEventlistView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatEventlistView.xcconfig; sourceTree = "<group>"; };
+		F4F3B0464211676C8826FB015A1A01B5 /* Pods-InStatEventlistView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InStatEventlistView_Example-umbrella.h"; sourceTree = "<group>"; };
+		F98D980E17F7391CEE701F5C269747C6 /* Pods-InStatEventlistView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		FBB2B5438D61081A8F3CC6107671B799 /* Pods-InStatEventlistView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InStatEventlistView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		FE2F0D2D21039AB0ADE5643547406137 /* InStatEventlistView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = InStatEventlistView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FEF484A66AEC950E4FF403463AE43155 /* Pods-InStatEventlistView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InStatEventlistView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4620F07AE75A1B00ED240B29880AC077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3C6A325227F7B81C0277DCAC31DA71 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69F519C5B7A35041C1906D49D83F0B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E88EAECAFAE083FF8D749A71736240 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06DE6DDCB32F9E98A0AD21B435FD2CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFD1AECCE4BCF76885A9C5BBC8FB53F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CB44D1071FC90B612EC17B2A03331F2 /* Pods-InStatEventlistView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				07F297D87B6B6157E9B2883A5B0AE162 /* Pods-InStatEventlistView_Tests.modulemap */,
+				FEF484A66AEC950E4FF403463AE43155 /* Pods-InStatEventlistView_Tests-acknowledgements.markdown */,
+				E0BA1FCE92568002F79B3A7263E406FF /* Pods-InStatEventlistView_Tests-acknowledgements.plist */,
+				2FF88065D4F831A6F7369C063A6B49B1 /* Pods-InStatEventlistView_Tests-dummy.m */,
+				463AF5BA8F9BC5BDB3214D0BF071A608 /* Pods-InStatEventlistView_Tests-Info.plist */,
+				FBB2B5438D61081A8F3CC6107671B799 /* Pods-InStatEventlistView_Tests-umbrella.h */,
+				D4C50136C2F0FAF55639212AFCD02A5E /* Pods-InStatEventlistView_Tests.debug.xcconfig */,
+				2C0D5E767568EFF699F7DDC33A9E049D /* Pods-InStatEventlistView_Tests.release.xcconfig */,
+			);
+			name = "Pods-InStatEventlistView_Tests";
+			path = "Target Support Files/Pods-InStatEventlistView_Tests";
+			sourceTree = "<group>";
+		};
+		570EAA1C2228C1D900D14929 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				570EAA122228C12500D14929 /* InStatEventlistProtocols.swift */,
+				570EAA1A2228C1AD00D14929 /* InStatEventlistView.swift */,
+				570EAA182228C19100D14929 /* InStatEpisodeCell.swift */,
+				570EAA162228C17000D14929 /* InStatEventCell.swift */,
+				570EAA142228C14E00D14929 /* InStatPickerPort.swift */,
+			);
+			name = Classes;
+			path = InStatEventlistView/Classes;
+			sourceTree = "<group>";
+		};
+		6462FF246E416AD140C0CAA5856947FE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC50145B292B5E04A534F764F5887806 /* InStatEventlistView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		AC50145B292B5E04A534F764F5887806 /* InStatEventlistView */ = {
+			isa = PBXGroup;
+			children = (
+				570EAA1C2228C1D900D14929 /* Classes */,
+				E031EFEA6358DA8E6F958B8A9BD6B659 /* Pod */,
+				ACB5EF5C98AE24159F489CB2B1A3A115 /* Support Files */,
+			);
+			name = InStatEventlistView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ACB5EF5C98AE24159F489CB2B1A3A115 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5CF082820D6E009B81C9B975C23C111 /* InStatEventlistView.modulemap */,
+				E9D103569D5B3E55A418EF7800FFFA54 /* InStatEventlistView.xcconfig */,
+				382343924DFF496F3D53A1B80A0442F2 /* InStatEventlistView-dummy.m */,
+				25D3AC5AF24587C0FF2BECD1D3100202 /* InStatEventlistView-Info.plist */,
+				07EE01979DEF31B3EC7BF616CC3081DE /* InStatEventlistView-prefix.pch */,
+				100D31642D6527B2BC21F32879E6C19D /* InStatEventlistView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/InStatEventlistView";
+			sourceTree = "<group>";
+		};
+		ACEC6E597EFF9B9280F58EEAD76C8D99 /* Pods-InStatEventlistView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				2925F39D2A26C017DF6A95AE16FC1EEE /* Pods-InStatEventlistView_Example.modulemap */,
+				A76A5DFDC03293B0655A07837EA7FE82 /* Pods-InStatEventlistView_Example-acknowledgements.markdown */,
+				F98D980E17F7391CEE701F5C269747C6 /* Pods-InStatEventlistView_Example-acknowledgements.plist */,
+				615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */,
+				3D288C7E490CD3AB020BE9DC88CE3B48 /* Pods-InStatEventlistView_Example-frameworks.sh */,
+				40A937B6F7BD4D9470EE3882B6BC2CD1 /* Pods-InStatEventlistView_Example-Info.plist */,
+				F4F3B0464211676C8826FB015A1A01B5 /* Pods-InStatEventlistView_Example-umbrella.h */,
+				D70DDD76DDB0596266678DF377E0D2FE /* Pods-InStatEventlistView_Example.debug.xcconfig */,
+				85B4F04F5FD0000F20417DCCEAD47DE9 /* Pods-InStatEventlistView_Example.release.xcconfig */,
+			);
+			name = "Pods-InStatEventlistView_Example";
+			path = "Target Support Files/Pods-InStatEventlistView_Example";
+			sourceTree = "<group>";
+		};
+		B6FFBF38E520A1D6C92046A89441A85E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACEC6E597EFF9B9280F58EEAD76C8D99 /* Pods-InStatEventlistView_Example */,
+				2CB44D1071FC90B612EC17B2A03331F2 /* Pods-InStatEventlistView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6462FF246E416AD140C0CAA5856947FE /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F7EE243EE176EA6FC702D5C481E0314C /* Products */,
+				B6FFBF38E520A1D6C92046A89441A85E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E031EFEA6358DA8E6F958B8A9BD6B659 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FE2F0D2D21039AB0ADE5643547406137 /* InStatEventlistView.podspec */,
+				0181C4E4E974A16CD172CDE90E7716C5 /* LICENSE */,
+				85CB0B6B30CB36D656E2D880CAD68E52 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		F7EE243EE176EA6FC702D5C481E0314C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648617CF456033453555B2F6A5DD8708 /* InStatEventlistView.framework */,
+				492E8E94E87EDD31BEB294A416615B43 /* Pods_InStatEventlistView_Example.framework */,
+				351D7A91C06F957C09F9490F03ACDF40 /* Pods_InStatEventlistView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11750ED63C462C188E48246C34672140 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A73296D2CFD4542EC085EE8A7C66A4E /* Pods-InStatEventlistView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD6143D1E7F1FE6A6204FECDF32B7761 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D82DD6FCC17FBFC3E7A69BDF4522DE /* Pods-InStatEventlistView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1BC810C46C587746A51E37E05F4E965 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B84BCA0C7EA3DC5F0F6E0706E75BA39 /* InStatEventlistView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		02D3D255BEB3E4B6F57EE02FB63A5863 /* InStatEventlistView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBCF31EA88175C297104984B0085B92C /* Build configuration list for PBXNativeTarget "InStatEventlistView" */;
+			buildPhases = (
+				F1BC810C46C587746A51E37E05F4E965 /* Headers */,
+				B203EF9B5EB6D3D4AF41F895B7776EE2 /* Sources */,
+				4620F07AE75A1B00ED240B29880AC077 /* Frameworks */,
+				E2E54009F896074B44F2170417EF83F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InStatEventlistView;
+			productName = InStatEventlistView;
+			productReference = 648617CF456033453555B2F6A5DD8708 /* InStatEventlistView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		25F551C5416942F1EFE6FAC7F267C447 /* Pods-InStatEventlistView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD78220BC51E16C5F806983E4C799B0F /* Build configuration list for PBXNativeTarget "Pods-InStatEventlistView_Tests" */;
+			buildPhases = (
+				BD6143D1E7F1FE6A6204FECDF32B7761 /* Headers */,
+				C49519D5F696D8B23D5F7B3010675A68 /* Sources */,
+				F06DE6DDCB32F9E98A0AD21B435FD2CD /* Frameworks */,
+				B5DA67797D1BB5D8473AF04F56E7C023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E45DD45A914D8A50A4A57FA02F45D8AB /* PBXTargetDependency */,
+			);
+			name = "Pods-InStatEventlistView_Tests";
+			productName = "Pods-InStatEventlistView_Tests";
+			productReference = 351D7A91C06F957C09F9490F03ACDF40 /* Pods_InStatEventlistView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB1E16A939465199A6D6ADDC7B094CF6 /* Pods-InStatEventlistView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D090E89D5C103A3BEC38FC071DDEB7 /* Build configuration list for PBXNativeTarget "Pods-InStatEventlistView_Example" */;
+			buildPhases = (
+				11750ED63C462C188E48246C34672140 /* Headers */,
+				0F8B1221D4C990904E039A82EC8A6BEB /* Sources */,
+				D69F519C5B7A35041C1906D49D83F0B1 /* Frameworks */,
+				7FB151F0E801EA3DA3EBE92E8EA9D299 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA414C585CC782AFD3C8648EAEF0588C /* PBXTargetDependency */,
+			);
+			name = "Pods-InStatEventlistView_Example";
+			productName = "Pods-InStatEventlistView_Example";
+			productReference = 492E8E94E87EDD31BEB294A416615B43 /* Pods_InStatEventlistView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					02D3D255BEB3E4B6F57EE02FB63A5863 = {
+						DevelopmentTeam = MTVD7A69KL;
+						LastSwiftMigration = 1010;
+						ProvisioningStyle = Automatic;
+					};
+					25F551C5416942F1EFE6FAC7F267C447 = {
+						DevelopmentTeam = MTVD7A69KL;
+						ProvisioningStyle = Automatic;
+					};
+					FB1E16A939465199A6D6ADDC7B094CF6 = {
+						DevelopmentTeam = MTVD7A69KL;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F7EE243EE176EA6FC702D5C481E0314C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02D3D255BEB3E4B6F57EE02FB63A5863 /* InStatEventlistView */,
+				FB1E16A939465199A6D6ADDC7B094CF6 /* Pods-InStatEventlistView_Example */,
+				25F551C5416942F1EFE6FAC7F267C447 /* Pods-InStatEventlistView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FB151F0E801EA3DA3EBE92E8EA9D299 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5DA67797D1BB5D8473AF04F56E7C023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E54009F896074B44F2170417EF83F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F8B1221D4C990904E039A82EC8A6BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				789FE4FAF1F686457FBEEB34B56895F4 /* Pods-InStatEventlistView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B203EF9B5EB6D3D4AF41F895B7776EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570EAA1B2228C1AD00D14929 /* InStatEventlistView.swift in Sources */,
+				570EAA192228C19100D14929 /* InStatEpisodeCell.swift in Sources */,
+				CE9DD69CE68AC7462EC0DFF482D6EDF8 /* InStatEventlistView-dummy.m in Sources */,
+				570EAA172228C17000D14929 /* InStatEventCell.swift in Sources */,
+				570EAA152228C14E00D14929 /* InStatPickerPort.swift in Sources */,
+				570EAA132228C12500D14929 /* InStatEventlistProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C49519D5F696D8B23D5F7B3010675A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C49A2AE6FFFEFEBB44D74A331FB588 /* Pods-InStatEventlistView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA414C585CC782AFD3C8648EAEF0588C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InStatEventlistView;
+			target = 02D3D255BEB3E4B6F57EE02FB63A5863 /* InStatEventlistView */;
+			targetProxy = 49EBA3B39DFCEFCAB14D718130732754 /* PBXContainerItemProxy */;
+		};
+		E45DD45A914D8A50A4A57FA02F45D8AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-InStatEventlistView_Example";
+			target = FB1E16A939465199A6D6ADDC7B094CF6 /* Pods-InStatEventlistView_Example */;
+			targetProxy = A4EE9BB2D5D3D061CD4505B37052EDE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00B9333CA9A08DD2F8613B4EA2AB38BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D103569D5B3E55A418EF7800FFFA54 /* InStatEventlistView.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTVD7A69KL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InStatEventlistView/InStatEventlistView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InStatEventlistView/InStatEventlistView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InStatEventlistView/InStatEventlistView.modulemap";
+				PRODUCT_MODULE_NAME = InStatEventlistView;
+				PRODUCT_NAME = InStatEventlistView;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5181D19F19DF185FC84332F8D8833334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D103569D5B3E55A418EF7800FFFA54 /* InStatEventlistView.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTVD7A69KL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InStatEventlistView/InStatEventlistView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InStatEventlistView/InStatEventlistView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InStatEventlistView/InStatEventlistView.modulemap";
+				PRODUCT_MODULE_NAME = InStatEventlistView;
+				PRODUCT_NAME = InStatEventlistView;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		584E4165218942330D5EB78B9873FB9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B4F04F5FD0000F20417DCCEAD47DE9 /* Pods-InStatEventlistView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTVD7A69KL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InStatEventlistView_Example/Pods-InStatEventlistView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InStatEventlistView_Example/Pods-InStatEventlistView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C6825CD717CFEE6BA1810A7B722531E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0D5E767568EFF699F7DDC33A9E049D /* Pods-InStatEventlistView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTVD7A69KL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InStatEventlistView_Tests/Pods-InStatEventlistView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InStatEventlistView_Tests/Pods-InStatEventlistView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A676F273619AAF194C398DF3DF36FF84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C50136C2F0FAF55639212AFCD02A5E /* Pods-InStatEventlistView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTVD7A69KL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InStatEventlistView_Tests/Pods-InStatEventlistView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InStatEventlistView_Tests/Pods-InStatEventlistView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AC68718A1A52324708AA84CD4ABE8F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D70DDD76DDB0596266678DF377E0D2FE /* Pods-InStatEventlistView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MTVD7A69KL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InStatEventlistView_Example/Pods-InStatEventlistView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InStatEventlistView_Example/Pods-InStatEventlistView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F232B5ECA11A71BFA199A229B323F454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */,
+				F232B5ECA11A71BFA199A229B323F454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D090E89D5C103A3BEC38FC071DDEB7 /* Build configuration list for PBXNativeTarget "Pods-InStatEventlistView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC68718A1A52324708AA84CD4ABE8F1B /* Debug */,
+				584E4165218942330D5EB78B9873FB9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD78220BC51E16C5F806983E4C799B0F /* Build configuration list for PBXNativeTarget "Pods-InStatEventlistView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A676F273619AAF194C398DF3DF36FF84 /* Debug */,
+				8C6825CD717CFEE6BA1810A7B722531E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBCF31EA88175C297104984B0085B92C /* Build configuration list for PBXNativeTarget "InStatEventlistView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B9333CA9A08DD2F8613B4EA2AB38BC /* Debug */,
+				5181D19F19DF185FC84332F8D8833334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

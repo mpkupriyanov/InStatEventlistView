@@ -1,0 +1,16 @@
+PODS:
+  - InStatEventlistView (0.1.0)
+
+DEPENDENCIES:
+  - InStatEventlistView (from `../`)
+
+EXTERNAL SOURCES:
+  InStatEventlistView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InStatEventlistView: 01d7601af0e534e8a536b0da02f25eebe3d07909
+
+PODFILE CHECKSUM: 1facfcb8dbe9ad1fddfc408d1dd472903dac9c55
+
+COCOAPODS: 1.6.0

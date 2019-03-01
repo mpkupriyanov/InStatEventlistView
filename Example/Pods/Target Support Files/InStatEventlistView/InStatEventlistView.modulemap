@@ -1,0 +1,6 @@
+framework module InStatEventlistView {
+  umbrella header "InStatEventlistView-umbrella.h"
+
+  export *
+  module * { export * }
+}
