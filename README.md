@@ -13,14 +13,14 @@ InStatEventlistView is a UI component in which the logic of interaction with but
 
 To use `InStatEventlistView` in code, you simply create a new instance
 ```swift
-     fileprivate lazy var eventlistView: InStatEventlistView = {
-
-		  let eventlist = InStatEventlistView()
-		  eventlist.dataSource = self
-		  eventlist.delegate = self
-		  eventlist.translatesAutoresizingMaskIntoConstraints = false
-		  return eventlist
-     }()
+  fileprivate lazy var eventlistView: InStatEventlistView = {
+  
+    let eventlist = InStatEventlistView()
+    eventlist.dataSource = self
+    eventlist.delegate = self
+    eventlist.translatesAutoresizingMaskIntoConstraints = false
+    return eventlist
+  }()
 ```
 
 and add it as a subview to your desired view:
@@ -28,24 +28,24 @@ and add it as a subview to your desired view:
 ```swift
   override func viewDidLoad() {
     super.viewDidLoad()
-		view.addSubview(eventlistView)
-	}
+    view.addSubview(eventlistView)
+  }
 ```
 ### Delegate
 You can use `InStatEventlistViewDelegate` to handle events
 ```swift
   func eventlistView(_ eventlistView: InStatEventlistView, heightForHeaderInSection section: Int) -> CGFloat
-	func eventlistView(_ eventlistView: InStatEventlistView, didSelect item: Row, at indexPath: IndexPath)
-	func eventlistView(_ eventlistView: InStatEventlistView, didDeselect item: Row, at indexPath: IndexPath)
-	func eventlistView(_ eventlistView: InStatEventlistView, didShare item: Row, at indexPath: IndexPath)
-	func eventlistView(_ eventlistView: InStatEventlistView, didDownload item: Row, at indexPath: IndexPath)
-	func eventlistView(_ eventlistView: InStatEventlistView, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath)
+  func eventlistView(_ eventlistView: InStatEventlistView, didSelect item: Row, at indexPath: IndexPath)
+  func eventlistView(_ eventlistView: InStatEventlistView, didDeselect item: Row, at indexPath: IndexPath)
+  func eventlistView(_ eventlistView: InStatEventlistView, didShare item: Row, at indexPath: IndexPath)
+  func eventlistView(_ eventlistView: InStatEventlistView, didDownload item: Row, at indexPath: IndexPath)
+  func eventlistView(_ eventlistView: InStatEventlistView, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath)
 ```
 and `InStatEventlistViewDataSource` to populate the component with data
 ```swift
   func numberOfSections(in eventlistView: InStatEventlistView) -> Int
-	func eventlistView(_ eventlistView: InStatEventlistView, numberOfRowsInSection section: Int) -> Int
-	func setEvents(for eventlistView: InStatEventlistView) -> [Section]
+  func eventlistView(_ eventlistView: InStatEventlistView, numberOfRowsInSection section: Int) -> Int
+  func setEvents(for eventlistView: InStatEventlistView) -> [Section]
 ```
 ## Example
 
