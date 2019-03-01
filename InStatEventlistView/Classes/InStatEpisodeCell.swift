@@ -5,7 +5,7 @@
 
 import UIKit
 
-protocol InStatEpisodeCellDelegate: class {
+public protocol InStatEpisodeCellDelegate: class {
 
 	func cell(_ cell: InStatEpisodeCell, didShare item: Row, at indexPath: IndexPath)
 	func cell(_ cell: InStatEpisodeCell, didDownload item: Row, at indexPath: IndexPath)
@@ -14,7 +14,7 @@ protocol InStatEpisodeCellDelegate: class {
 	func cell(_ cell: InStatEpisodeCell, itemAt indexPath: IndexPath, didChangeCheckTo state: Bool)
 }
 
-class InStatEpisodeCell: UITableViewCell {
+open class InStatEpisodeCell: UITableViewCell {
 
 	// MARK: - Properties
 
@@ -22,9 +22,9 @@ class InStatEpisodeCell: UITableViewCell {
 	fileprivate var indexPath: IndexPath!
 	fileprivate var item: Row!
 
-	lazy var playbutton: UIButton = {
+	fileprivate lazy var playbutton: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("Playlist"), for: .normal)
 		button.setImage(imageResourcePath("PlaylistPause"), for: .selected)
@@ -32,7 +32,7 @@ class InStatEpisodeCell: UITableViewCell {
 		return button
 	}()
 
-	var timeRange: UILabel = {
+	fileprivate var timeRange: UILabel = {
 
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
@@ -41,9 +41,9 @@ class InStatEpisodeCell: UITableViewCell {
 		return label
 	}()
 
-	lazy var viewpoint: UIButton = {
+	fileprivate lazy var viewpoint: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("drop_black"), for: .normal)
 		button.contentHorizontalAlignment = .left
@@ -52,9 +52,9 @@ class InStatEpisodeCell: UITableViewCell {
 		return button
 	}()
 
-	lazy var downloadButton: UIButton = {
+	fileprivate lazy var downloadButton: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("download_video"), for: .normal)
 		button.addTarget(self, action: #selector(downloadDidPress), for: .touchUpInside)
@@ -62,9 +62,9 @@ class InStatEpisodeCell: UITableViewCell {
 		return button
 	}()
 
-	lazy var shareButton: UIButton = {
+	fileprivate lazy var shareButton: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("share_episode"), for: .normal)
 		button.addTarget(self, action: #selector(shareDidPress), for: .touchUpInside)
@@ -72,9 +72,9 @@ class InStatEpisodeCell: UITableViewCell {
 		return button
 	}()
 
-	lazy var selection: UIButton = {
+	fileprivate lazy var selection: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("unchecked"), for: .normal)
 		button.setImage(imageResourcePath("checked"), for: .selected)
@@ -85,7 +85,7 @@ class InStatEpisodeCell: UITableViewCell {
 
 	// MARK: - Life cycle
 
-	override func setSelected(_ selected: Bool, animated: Bool) {
+	override open func setSelected(_ selected: Bool, animated: Bool) {
 		super.setSelected(selected, animated: animated)
 
 		playbutton.isHidden = !selected
@@ -101,12 +101,12 @@ class InStatEpisodeCell: UITableViewCell {
 
 	// MARK: - Setup data
 
-	func setup(_ row: Row, atIndexPath indexPath: IndexPath, andDelegate delegate: InStatEpisodeCellDelegate) {
+	public func setup(_ row: Row, atIndexPath indexPath: IndexPath, andDelegate delegate: InStatEpisodeCellDelegate) {
 		setup(row, atIndexPath: indexPath)
 		self.delegate = delegate
 	}
 
-	func setup(_ row: Row, atIndexPath indexPath: IndexPath) {
+	public func setup(_ row: Row, atIndexPath indexPath: IndexPath) {
 
 		timeRange.text = row.timeRange
 		selection.isSelected = row.selection
@@ -128,7 +128,7 @@ class InStatEpisodeCell: UITableViewCell {
 		setupTimeRange()
 	}
 
-	func setupSelection() {
+	fileprivate func setupSelection() {
 
 		addSubview(selection)
 		selection.rightAnchor.constraint(equalTo: rightAnchor, constant: -8).isActive = true
@@ -137,7 +137,7 @@ class InStatEpisodeCell: UITableViewCell {
 		selection.heightAnchor.constraint(equalToConstant: 34).isActive = true
 	}
 
-	func setupShare() {
+	fileprivate func setupShare() {
 		addSubview(shareButton)
 		shareButton.rightAnchor.constraint(equalTo: selection.leftAnchor).isActive = true
 		shareButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
@@ -145,7 +145,7 @@ class InStatEpisodeCell: UITableViewCell {
 		shareButton.heightAnchor.constraint(equalToConstant: 34).isActive = true
 	}
 
-	func setupDownload() {
+	fileprivate func setupDownload() {
 		addSubview(downloadButton)
 		downloadButton.rightAnchor.constraint(equalTo: shareButton.leftAnchor).isActive = true
 		downloadButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
@@ -162,7 +162,7 @@ class InStatEpisodeCell: UITableViewCell {
 		viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
 	}
 
-	func setupPlay() {
+	fileprivate func setupPlay() {
 
 		addSubview(playbutton)
 		playbutton.leftAnchor.constraint(equalTo: leftAnchor, constant: 10).isActive = true
@@ -171,7 +171,7 @@ class InStatEpisodeCell: UITableViewCell {
 		playbutton.heightAnchor.constraint(equalToConstant: 34).isActive = true
 	}
 
-	func setupTimeRange() {
+	fileprivate func setupTimeRange() {
 
 		addSubview(timeRange)
 		timeRange.leftAnchor.constraint(equalTo: playbutton.rightAnchor, constant: 10).isActive = true
@@ -181,7 +181,7 @@ class InStatEpisodeCell: UITableViewCell {
 
 	// MARK: - Helpers
 
-	func imageResourcePath(_ name: String) -> UIImage? {
+	fileprivate func imageResourcePath(_ name: String) -> UIImage? {
 
 		let bundle = Bundle(for: InStatEventCell.self)
 		return UIImage(named: name, in: bundle, compatibleWith: nil)
@@ -189,29 +189,29 @@ class InStatEpisodeCell: UITableViewCell {
 
 	// MARK: - Actions
 
-	@objc func checkDidPress() {
+	@objc fileprivate func checkDidPress() {
 
 		let state = !selection.isSelected
 		selection.isSelected = state
 		delegate?.cell(self, itemAt: indexPath, didChangeCheckTo: state)
 	}
 
-	@objc func viewpointDidPress() {
+	@objc fileprivate func viewpointDidPress() {
 		delegate?.cell(self, didSetItemViewpoint: item, at: indexPath)
 	}
 
-	@objc func playDidPress() {
+	@objc fileprivate func playDidPress() {
 
 		let state = !playbutton.isSelected
 		playbutton.isSelected = state
 		delegate?.cell(self, didChangePlaySelectionState: state, forItem: item, at: indexPath)
 	}
 
-	@objc func shareDidPress() {
+	@objc fileprivate func shareDidPress() {
 		delegate?.cell(self, didShare: item, at: indexPath)
 	}
 
-	@objc func downloadDidPress() {
+	@objc fileprivate func downloadDidPress() {
 		delegate?.cell(self, didDownload: item, at: indexPath)
 	}
 }

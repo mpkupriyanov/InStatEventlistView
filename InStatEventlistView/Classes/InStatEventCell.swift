@@ -5,7 +5,7 @@
 
 import UIKit
 
-protocol InStatEventCellDelegate: class {
+public protocol InStatEventCellDelegate: class {
 
 	func cell(_ cell: InStatEventCell, didSetSectionViewpoint section: Section, at sectionIndex: Int)
 	func cell(_ cell: InStatEventCell, at index: Int, didChangeCheckTo state: Bool)
@@ -19,7 +19,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 	fileprivate var index: Int!
 	fileprivate var section: Section!
 
-	var title: UILabel = {
+	fileprivate var title: UILabel = {
 
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
@@ -29,7 +29,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		return label
 	}()
 
-	var subTitle: UILabel = {
+	fileprivate var subTitle: UILabel = {
 
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
@@ -39,9 +39,9 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		return label
 	}()
 
-	lazy var viewpoint: UIButton = {
+	fileprivate lazy var viewpoint: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("drop_black"), for: .normal)
 		button.addTarget(self, action: #selector(viewpointDidPress), for: .touchUpInside)
@@ -50,9 +50,9 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		return button
 	}()
 
-	lazy var selection: UIButton = {
+	fileprivate lazy var selection: UIButton = {
 
-		let button = UIButton(type: UIButton.UIButton.ButtonType.custom)
+		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("unchecked"), for: .normal)
 		button.setImage(imageResourcePath("checked"), for: .selected)
@@ -71,14 +71,14 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 
 	// MARK: - Setup data
 
-	func setup(_ section: Section, atSectionIndex sectionIndex: Int, andDelegate delegate: InStatEventCellDelegate? = nil) {
+	public func setup(_ section: Section, atSectionIndex sectionIndex: Int, andDelegate delegate: InStatEventCellDelegate? = nil) {
 
 		setup(section, atSectionIndex: sectionIndex)
 		self.section = section
 		self.delegate = delegate
 	}
 
-	func setup(_ section: Section, atSectionIndex sectionIndex: Int) {
+	public func setup(_ section: Section, atSectionIndex sectionIndex: Int) {
 
 		title.text = section.title
 		subTitle.text = section.subTitle
@@ -132,7 +132,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		subTitle.topAnchor.constraint(equalTo: title.bottomAnchor).isActive = true
 	}
 
-	func imageResourcePath(_ name: String) -> UIImage? {
+	fileprivate func imageResourcePath(_ name: String) -> UIImage? {
 
 		let bundle = Bundle(for: InStatEventCell.self)
 		return UIImage(named: name, in: bundle, compatibleWith: nil)
@@ -140,14 +140,14 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 
 	// MARK: - Actions
 
-	@objc func checkDidPress() {
+	@objc fileprivate func checkDidPress() {
 
 		let state = !selection.isSelected
 		selection.isSelected = state
 		delegate?.cell(self, at: index, didChangeCheckTo: state)
 	}
 
-	@objc func viewpointDidPress() {
+	@objc fileprivate func viewpointDidPress() {
 		delegate?.cell(self, didSetSectionViewpoint: section, at: index)
 	}
 }

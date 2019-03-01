@@ -67,13 +67,13 @@ open class InStatEventlistView: UIView {
 		pickerPort = InStatPickerPort()
 	}
 
-	func reloadData() {
+	public func reloadData() {
 
 		events = dataSource?.setEvents(for: self) ?? []
 		tableView.reloadData()
 	}
 
-	func setupTableView() {
+	fileprivate func setupTableView() {
 
 		tableView = UITableView(frame: .zero, style: .plain)
 		tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -176,7 +176,7 @@ extension InStatEventlistView: UITableViewDelegate {
 
 extension InStatEventlistView: InStatEventCellDelegate {
 
-	func cell(_ cell: InStatEventCell, didSetSectionViewpoint section: Section, at sectionIndex: Int) {
+	public func cell(_ cell: InStatEventCell, didSetSectionViewpoint section: Section, at sectionIndex: Int) {
 
 		var pickerData: [(title: String, section: Section, row: Row?, isSection: Bool, indexPath: IndexPath)] = []
 		let indexPath = IndexPath(row: 0, section: sectionIndex)
@@ -192,7 +192,7 @@ extension InStatEventlistView: InStatEventCellDelegate {
 		pickerPort.openPickerView()
 	}
 
-	func cell(_ cell: InStatEventCell, at index: Int, didChangeCheckTo state: Bool) {
+	public func cell(_ cell: InStatEventCell, at index: Int, didChangeCheckTo state: Bool) {
 
 		var indexPaths: [IndexPath] = []
 
@@ -211,19 +211,19 @@ extension InStatEventlistView: InStatEventCellDelegate {
 
 extension InStatEventlistView: InStatEpisodeCellDelegate {
 
-	func cell(_ cell: InStatEpisodeCell, didShare item: Row, at indexPath: IndexPath) {
+	public func cell(_ cell: InStatEpisodeCell, didShare item: Row, at indexPath: IndexPath) {
 		delegate?.eventlistView(self, didShare: item, at: indexPath)
 	}
 
-	func cell(_ cell: InStatEpisodeCell, didDownload item: Row, at indexPath: IndexPath) {
+	public func cell(_ cell: InStatEpisodeCell, didDownload item: Row, at indexPath: IndexPath) {
 		delegate?.eventlistView(self, didDownload: item, at: indexPath)
 	}
 
-	func cell(_ cell: InStatEpisodeCell, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath) {
+	public func cell(_ cell: InStatEpisodeCell, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath) {
 		delegate?.eventlistView(self, didChangePlaySelectionState: state, forItem: item, at: indexPath)
 	}
 
-	func cell(_ cell: InStatEpisodeCell, didSetItemViewpoint item: Row, at indexPath: IndexPath) {
+	public func cell(_ cell: InStatEpisodeCell, didSetItemViewpoint item: Row, at indexPath: IndexPath) {
 
 		var pickerData: [(title: String, section: Section, row: Row?, isSection: Bool, indexPath: IndexPath)] = []
 
@@ -240,7 +240,7 @@ extension InStatEventlistView: InStatEpisodeCellDelegate {
 		pickerPort.openPickerView()
 	}
 
-	func cell(_ cell: InStatEpisodeCell, itemAt indexPath: IndexPath, didChangeCheckTo state: Bool) {
+	public func cell(_ cell: InStatEpisodeCell, itemAt indexPath: IndexPath, didChangeCheckTo state: Bool) {
 
 		let sectionIndex = indexPath.section
 		let row = indexPath.row
@@ -258,6 +258,6 @@ extension InStatEventlistView: InStatPickerPortDelegate {
 
 		tableView(tableView, updateSectionAtSectionIndex: indexPath.section)
 		tableView(tableView, didSelectRowAt: indexPath)
-		tableView.selectRow(at: indexPath, animated: true, scrollPosition: UITableView.UITableView.ScrollPosition.none)
+		tableView.selectRow(at: indexPath, animated: true, scrollPosition: .none)
 	}
 }

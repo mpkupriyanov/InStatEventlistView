@@ -10,7 +10,7 @@ public protocol InStatPickerPortDelegate: class {
 	func viewpointDidChangeAt(_ indexPath: IndexPath)
 }
 
-class InStatPickerPort: NSObject {
+open class InStatPickerPort: NSObject {
 
 	// MARK: - Properties
 
@@ -35,7 +35,7 @@ class InStatPickerPort: NSObject {
 
 	// MARK: - Helpers
 
-	func setupPickerView() {
+	fileprivate func setupPickerView() {
 
 		guard let appDelegate = UIApplication.shared.delegate else { return }
 		guard let window = appDelegate.window else { return }
