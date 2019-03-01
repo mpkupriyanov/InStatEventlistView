@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'InStatEventlistView_Example' do
+  pod 'InStatEventlistView', :path => '../'
+
+  target 'InStatEventlistView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
