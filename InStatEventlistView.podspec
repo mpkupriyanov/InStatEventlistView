@@ -31,7 +31,7 @@ InStatEventlistView is a custom tableView component with encapsulated business l
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'InStatEventlistView/Classes/**/*'
-  s.resource_bundles = {
+  s.resource = {
 	  'InStatEventlistView' => ['InStatEventlistView/Assets/*.xcassets']
   }
   s.frameworks = 'UIKit', 'Foundation'
