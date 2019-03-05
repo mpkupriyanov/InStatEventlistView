@@ -85,8 +85,13 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		index = sectionIndex
 		selection.isSelected = section.selection
 
-		let attributedString = NSAttributedString(string: "Video \(section.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.regular)])
-		viewpoint.setAttributedTitle(attributedString, for: .normal)
+		// if viewpoints are empty or equal to 1 should hide viewpoint button
+		if !section.viewpoints.isEmpty && section.viewpoints.count > 1 {
+
+			viewpoint.isHidden = false
+			let attributedString = NSAttributedString(string: "Video \(section.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.regular)])
+			viewpoint.setAttributedTitle(attributedString, for: .normal)
+		}
 	}
 
 	// MARK - Setup components
