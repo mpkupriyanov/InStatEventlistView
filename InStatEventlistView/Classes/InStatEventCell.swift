@@ -134,7 +134,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 
 	fileprivate func imageResourcePath(_ name: String) -> UIImage? {
 
-		let bundle = Bundle(for: InStatEventlistView.self)
+		let bundle = Bundle(for: InStatEventCell.self)
 		return UIImage(named: name, in: bundle, compatibleWith: nil)
 	}
 

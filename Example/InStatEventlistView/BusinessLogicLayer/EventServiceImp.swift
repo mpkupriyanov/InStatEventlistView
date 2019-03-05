@@ -73,8 +73,6 @@ class EventServiceImp: EventService {
 
 	fileprivate func createViewpoints(urlStrings: [RawEpisodeURL]) -> [(URL, Permission)] {
 
-
-
 		var urls: [(URL, Permission)] = []
 
 		urlStrings.forEach { (urlModel) in
