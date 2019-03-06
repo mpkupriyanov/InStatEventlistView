@@ -112,12 +112,12 @@ open class InStatEpisodeCell: UITableViewCell {
 		timeRange.text = row.timeRange
 		selection.isSelected = row.selection
 		item = row
+		self.indexPath = indexPath
 
 		// if viewpoints are empty or equal to 1 should hide viewpoint button
 		if !row.viewpoints.isEmpty && row.viewpoints.count > 1 {
 
 			viewpoint.isHidden = false
-			self.indexPath = indexPath
 			let attributedString = NSAttributedString(string: "Video \(row.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: .regular)])
 			viewpoint.setAttributedTitle(attributedString, for: .normal)
 		}
