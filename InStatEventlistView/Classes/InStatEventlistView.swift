@@ -73,6 +73,11 @@ open class InStatEventlistView: UIView {
 		tableView.reloadData()
 	}
 
+	public func selectRow(at indexPath: IndexPath, animated: Bool, scrollPosition position: UITableView.ScrollPosition) {
+
+		tableView.selectRow(at: indexPath, animated: animated, scrollPosition: position)
+	}
+
 	fileprivate func setupTableView() {
 
 		tableView = UITableView(frame: .zero, style: .plain)
