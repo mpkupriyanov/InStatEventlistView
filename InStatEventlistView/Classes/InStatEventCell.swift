@@ -45,6 +45,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("drop_black"), for: .normal)
 		button.addTarget(self, action: #selector(viewpointDidPress), for: .touchUpInside)
+		button.isHidden = true
 		button.contentHorizontalAlignment = .left
 		button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
 		return button
@@ -83,7 +84,8 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		title.text = section.title
 		subTitle.text = section.subTitle
 		index = sectionIndex
-		selection.isSelected = section.selection
+		selection.isSelected = section.isSelection
+		
 
 		// if viewpoints are empty or equal to 1 should hide viewpoint button
 		if !section.viewpoints.isEmpty && section.viewpoints.count > 1 {

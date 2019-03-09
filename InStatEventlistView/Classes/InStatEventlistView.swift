@@ -205,7 +205,7 @@ extension InStatEventlistView: InStatEventCellDelegate {
 
 			let indexPath = IndexPath(row: i, section: index)
 			indexPaths.append(indexPath)
-			events[index].rows[i].selection = state
+			events[index].rows[i].isSelection = state
 		}
 
 		tableView(tableView, updateCellsAtIndexPaths: indexPaths)
@@ -249,8 +249,8 @@ extension InStatEventlistView: InStatEpisodeCellDelegate {
 
 		let sectionIndex = indexPath.section
 		let row = indexPath.row
-		events[sectionIndex].rows[row].selection = state
-		events[sectionIndex].selection = !events[sectionIndex].rows.contains(where: { $0.selection == false })
+		events[sectionIndex].rows[row].isSelection = state
+		events[sectionIndex].isSelection = !events[sectionIndex].rows.contains(where: { $0.isSelection == false })
 		tableView(tableView, updateSectionAtSectionIndex: sectionIndex)
 	}
 }

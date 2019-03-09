@@ -110,9 +110,11 @@ open class InStatEpisodeCell: UITableViewCell {
 	public func setup(_ row: Row, atIndexPath indexPath: IndexPath) {
 
 		timeRange.text = row.timeRange
-		selection.isSelected = row.selection
+		selection.isSelected = row.isSelection
 		item = row
 		self.indexPath = indexPath
+
+		downloadButton.isHidden = row.isDownloaded
 
 		// if viewpoints are empty or equal to 1 should hide viewpoint button
 		if !row.viewpoints.isEmpty && row.viewpoints.count > 1 {

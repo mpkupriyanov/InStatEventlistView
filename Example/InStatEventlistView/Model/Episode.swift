@@ -14,16 +14,24 @@ class Episode: Row {
 
 	var timeRange: String
 
-	var selection: Bool
+	var isSelection: Bool
+
+	var isDownloaded: Bool
 
 	var viewpointIndex: Int
 
-	init(id: Int, viewpoints: [(URL, Permission)], timeRange: String) {
+	init(id: Int,
+		 viewpoints: [(URL, Permission)],
+		 timeRange: String,
+		 isSelection: Bool = false,
+		 isDownloaded: Bool = false,
+		 viewpointIndex: Int = 0) {
 
 		self.id = id
 		self.viewpoints = viewpoints
 		self.timeRange = timeRange
-		self.selection = false
-		self.viewpointIndex = 0
+		self.isSelection = isSelection
+		self.isDownloaded = isDownloaded
+		self.viewpointIndex = viewpointIndex
 	}
 }
