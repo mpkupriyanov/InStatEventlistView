@@ -55,7 +55,7 @@ class EventServiceImp: EventService {
 
 				let viewpoints = createViewpoints(urlStrings: rawURLs)
 				let time = Time.timeFor(event)
-				let row = Episode(id: id, viewpoints: viewpoints, timeRange: time)
+				let row = Episode(id: id, viewpoints: viewpoints, timeRange: time, isDownloaded:  true)
 
 				guard let title = event.title else { return }
 				guard let score = event.score else { return }

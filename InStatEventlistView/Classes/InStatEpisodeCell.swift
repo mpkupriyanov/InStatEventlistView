@@ -97,14 +97,17 @@ open class InStatEpisodeCell: UITableViewCell {
 		super.layoutSubviews()
 
 		backgroundColor = UIColor.init(red: 232/255.0, green: 232/255.0, blue: 232/255.0, alpha: 1)
-		setupUIComponents()
 	}
 
 	// MARK: - Setup data
 
-	public func setup(_ row: Row, atIndexPath indexPath: IndexPath, andDelegate delegate: InStatEpisodeCellDelegate) {
+	public func setup(_ row: Row,
+					  atIndexPath indexPath: IndexPath,
+					  andDelegate delegate: InStatEpisodeCellDelegate) {
+
 		setup(row, atIndexPath: indexPath)
 		self.delegate = delegate
+		setupUIComponents()
 	}
 
 	public func setup(_ row: Row, atIndexPath indexPath: IndexPath) {
@@ -165,10 +168,20 @@ open class InStatEpisodeCell: UITableViewCell {
 	fileprivate func setupViewpoint() {
 
 		addSubview(viewpoint)
-		viewpoint.rightAnchor.constraint(equalTo: downloadButton.leftAnchor).isActive = true
-		viewpoint.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-		viewpoint.widthAnchor.constraint(equalToConstant: 64).isActive = true
-		viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
+
+		if downloadButton.isHidden {
+
+			viewpoint.rightAnchor.constraint(equalTo: shareButton.leftAnchor).isActive = true
+			viewpoint.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+			viewpoint.widthAnchor.constraint(equalToConstant: 64).isActive = true
+			viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
+		} else {
+
+			viewpoint.rightAnchor.constraint(equalTo: downloadButton.leftAnchor).isActive = true
+			viewpoint.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+			viewpoint.widthAnchor.constraint(equalToConstant: 64).isActive = true
+			viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
+		}
 	}
 
 	fileprivate func setupPlay() {
