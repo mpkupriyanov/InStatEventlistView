@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import InStatDownloadButton
 
 public protocol InStatEpisodeCellDelegate: class {
 
@@ -53,9 +54,9 @@ open class InStatEpisodeCell: UITableViewCell {
 		return button
 	}()
 
-	fileprivate lazy var downloadButton: UIButton = {
+	public lazy var downloadButton: InStatDownloadButton = {
 
-		let button = UIButton(type: .custom)
+		let button = InStatDownloadButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("download_video"), for: .normal)
 		button.addTarget(self, action: #selector(downloadDidPress), for: .touchUpInside)

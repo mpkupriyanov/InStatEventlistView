@@ -26,7 +26,7 @@ open class InStatEventlistView: UIView {
 
 	// MARK: - Properties
 
-	fileprivate var tableView: UITableView!
+	public var tableView: UITableView!
 	fileprivate var events: [Section]!
 	public weak var dataSource: InStatEventlistViewDataSource?
 	public weak var delegate: InStatEventlistViewDelegate?

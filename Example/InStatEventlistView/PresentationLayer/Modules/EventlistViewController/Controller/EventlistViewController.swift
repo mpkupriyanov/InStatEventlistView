@@ -105,6 +105,8 @@ extension EventlistViewController: InStatEventlistViewDelegate {
 
 	func eventlistView(_ eventlistView: InStatEventlistView, didDownload item: Row, at indexPath: IndexPath) {
 		print(item)
+
+
 	}
 
 	func eventlistView(_ eventlistView: InStatEventlistView, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath) {

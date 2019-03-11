@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InStatEventlistView'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'InStatEventlistView - custom table'
 
 # This description is used to generate tags and improve search results.
@@ -33,4 +33,7 @@ InStatEventlistView is a custom tableView component with encapsulated business l
   s.source_files = 'InStatEventlistView/Classes/**/*'
   s.resources =  'InStatEventlistView/Assets/*.xcassets'
   s.frameworks = 'UIKit', 'Foundation'
+
+  s.dependency 'InStatDownloadButton'
+
 end
