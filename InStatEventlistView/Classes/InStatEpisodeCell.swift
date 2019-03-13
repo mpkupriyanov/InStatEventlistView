@@ -131,7 +131,7 @@ open class InStatEpisodeCell: UITableViewCell {
 
 	// MARK - Setup components
 
-	fileprivate func setupUIComponents() {
+	public func setupUIComponents() {
 
 		setupSelection()
 		setupShare()

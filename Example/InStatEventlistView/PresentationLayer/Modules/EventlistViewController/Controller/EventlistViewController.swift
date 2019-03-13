@@ -59,7 +59,6 @@ class EventlistViewController: UIViewController {
 			self.eventlistView.reloadData()
 		}
 	}
-
 }
 
 // MARK: - InStatEventlistViewDataSource
@@ -104,10 +103,29 @@ extension EventlistViewController: InStatEventlistViewDelegate {
 	}
 
 	func eventlistView(_ eventlistView: InStatEventlistView, didDownload item: Row, at indexPath: IndexPath) {
-		print(item)
 
+		guard let cell = eventlistView.tableView.cellForRow(at: indexPath) as? InStatEpisodeCell else { return }
 
-	}
+		let downloadButton = cell.downloadButton
+		downloadButton.downloadState = .pending
+
+		DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+
+			downloadButton.downloadState = .downloading
+			downloadButton.progressView.animate(fromAngle: 0,
+												toAngle: 360,
+												duration: 2) { finish in
+				if finish {
+					downloadButton.isHidden = true
+					downloadButton.downloadState = .finish
+				} else {
+					downloadButton.downloadState = .stop
+				}
+
+				cell.setupUIComponents()
+			}
+		}
+}
 
 	func eventlistView(_ eventlistView: InStatEventlistView, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath) {
 

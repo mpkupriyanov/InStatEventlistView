@@ -20,7 +20,7 @@ class NetworkImp: Network {
 	  "data": [
 		{
 		  "match": 111,
-		  "title": "Шарлотт Хорнетс - Лос-Анджелес Клипперс",
+		  "title": "Charlotte Hornets - Los Angeles Clippers",
 		  "match_date": "2019-02-06T03:00:00",
 		  "score": "115:117",
 		  "half": 3,
@@ -43,7 +43,7 @@ class NetworkImp: Network {
 		},
 		{
 		  "match": 111,
-		  "title": "Шарлотт Хорнетс - Лос-Анджелес Клипперс",
+		  "title": "Charlotte Hornets - Los Angeles Clippers",
 		  "match_date": "2019-02-06T03:00:00",
 		  "score": "115:117",
 		  "half": 4,
@@ -66,7 +66,7 @@ class NetworkImp: Network {
 		},
 		{
 		  "match": 111,
-		  "title": "Шарлотт Хорнетс - Лос-Анджелес Клипперс",
+		  "title": "Charlotte Hornets - Los Angeles Clippers",
 		  "match_date": "2019-02-06T03:00:00",
 		  "score": "115:117",
 		  "half": 3,
@@ -89,7 +89,7 @@ class NetworkImp: Network {
 		},
 		{
 		"match":404029,
-		"title":"Лос-Анджелес Клипперс - Лос-Анджелес Лейкерс",
+		"title": "Charlotte Hornets - Los Angeles Clippers",
 		"match_date":"2019-02-01T06:30:00",
 		"score":"120:123",
 		"half":2,
