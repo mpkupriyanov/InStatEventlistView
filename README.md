@@ -1,5 +1,7 @@
 # InStatEventlistView
 
+![ScreenRecording_03-13-2019 03-41-17 2019-03-13 03_56_40](https://user-images.githubusercontent.com/4906243/54246000-2e656380-4544-11e9-8a23-32fe021a7a22.gif)
+
 [![CI Status](https://img.shields.io/travis/tularovbeslan@gmail.com/InStatEventlistView.svg?style=flat)](https://travis-ci.org/tularovbeslan@gmail.com/InStatEventlistView)
 [![Version](https://img.shields.io/cocoapods/v/InStatEventlistView.svg?style=flat)](https://cocoapods.org/pods/InStatEventlistView)
 [![License](https://img.shields.io/cocoapods/l/InStatEventlistView.svg?style=flat)](https://cocoapods.org/pods/InStatEventlistView)
