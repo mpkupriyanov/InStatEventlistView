@@ -480,11 +480,11 @@
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 3DBAA7E2E143A54DA8646DCEC8E36A22 /* Products */;
@@ -736,7 +736,7 @@
 			};
 			name = Release;
 		};
-		49C08E24181549EA2679F944D67FADF6 /* Release */ = {
+		40AFEFDF1BA0E0760002921DCA862234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */;
 			buildSettings = {
@@ -761,13 +761,12 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		5B0C8287D755FD95091CF35D87FB8B2D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -833,6 +832,39 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
+		};
+		6E7DF16A66279C738F8CBDC13B0F75B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InStatDownloadButton/InStatDownloadButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InStatDownloadButton/InStatDownloadButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/InStatDownloadButton/InStatDownloadButton.modulemap";
+				PRODUCT_MODULE_NAME = InStatDownloadButton;
+				PRODUCT_NAME = InStatDownloadButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		99C61554C87F909E27C614383051C9F2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -903,38 +935,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		E340741E6C52369D7D173C06227AF799 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/InStatDownloadButton/InStatDownloadButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/InStatDownloadButton/InStatDownloadButton-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/InStatDownloadButton/InStatDownloadButton.modulemap";
-				PRODUCT_MODULE_NAME = InStatDownloadButton;
-				PRODUCT_NAME = InStatDownloadButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		F10CBFC34E58972C86BF9088D5836E44 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1045,8 +1045,8 @@
 		ECBC4271B2571944DD78E0C15BE710DC /* Build configuration list for PBXNativeTarget "InStatDownloadButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E340741E6C52369D7D173C06227AF799 /* Debug */,
-				49C08E24181549EA2679F944D67FADF6 /* Release */,
+				40AFEFDF1BA0E0760002921DCA862234 /* Debug */,
+				6E7DF16A66279C738F8CBDC13B0F75B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

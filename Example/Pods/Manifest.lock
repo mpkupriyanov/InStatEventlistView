@@ -1,6 +1,6 @@
 PODS:
-  - InStatDownloadButton (1.0.0)
-  - InStatEventlistView (1.1.2):
+  - InStatDownloadButton (1.1.0)
+  - InStatEventlistView (2.0.0):
     - InStatDownloadButton
 
 DEPENDENCIES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  InStatDownloadButton: 6fe741e9a8b3d9748503b571dde26fdda274578f
-  InStatEventlistView: 06e7351da849848b4d3fe214ce40c33a77748d34
+  InStatDownloadButton: b594c1d5b0e90d9cc2e9fd1b6181668ca2d2618c
+  InStatEventlistView: 92d837a3fa3bd1a9c3703309db6ec7283d81a05d
 
 PODFILE CHECKSUM: b9318b236da827b89c68d4a8c876b79043935e86
 
