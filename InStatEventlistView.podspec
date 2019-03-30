@@ -26,7 +26,7 @@ InStatEventlistView is a custom tableView component with encapsulated business l
   s.author           = { 'tularovbeslan@gmail.com' => 'tularovbeslan@gmail.com' }
   s.source           = { :git => 'https://github.com/tularovbeslan/InStatEventlistView.git', :tag => s.version.to_s }
 	s.social_media_url = 'https://twitter.com/JiromTomson'
-	s.swift_version = '4.2'
+	s.swift_version = '5'
 
   s.ios.deployment_target = '10.0'
 

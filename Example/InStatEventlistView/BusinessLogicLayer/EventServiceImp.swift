@@ -32,7 +32,7 @@ class EventServiceImp: EventService {
 
 		events.forEach { (event) in
 
-			if let index = sections.index(where: { (section) -> Bool in
+			if let index = sections.firstIndex(where: { (section) -> Bool in
 
 				guard let title = event.title else { return false}
 				guard let rawDate = event.date else { return false }
