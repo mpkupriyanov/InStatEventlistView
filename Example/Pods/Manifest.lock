@@ -5,20 +5,17 @@ PODS:
 
 DEPENDENCIES:
   - InStatDownloadButton
-  - InStatEventlistView (from `../`)
+  - InStatEventlistView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - InStatDownloadButton
-
-EXTERNAL SOURCES:
-  InStatEventlistView:
-    :path: "../"
+    - InStatEventlistView
 
 SPEC CHECKSUMS:
   InStatDownloadButton: b594c1d5b0e90d9cc2e9fd1b6181668ca2d2618c
   InStatEventlistView: 690dbc2bad36d6683ce0a6852a044448ea688428
 
-PODFILE CHECKSUM: 5b75327b1c8c19426f794e040ac325cde43a1e78
+PODFILE CHECKSUM: df975e0a24711038d7177a33244c793e90a2a3af
 
 COCOAPODS: 1.6.0

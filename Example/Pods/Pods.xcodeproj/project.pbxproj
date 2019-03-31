@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02CB370D63EA250BDB984DBF80E95E46 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54885FD52414552EAD10CD9C1508869 /* Conversion.swift */; };
+		02CB370D63EA250BDB984DBF80E95E46 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAD0738ECC0361703EFCCC747F5A99 /* Conversion.swift */; };
 		06C49A2AE6FFFEFEBB44D74A331FB588 /* Pods-InStatEventlistView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF88065D4F831A6F7369C063A6B49B1 /* Pods-InStatEventlistView_Tests-dummy.m */; };
-		1065DFF854096F0645A18987EA4EC12C /* InStatEventlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74576038DBD5BB7BBBD356674709317A /* InStatEventlistView.swift */; };
-		26A75BB883233D2BE4799D972A48035C /* InStatDownloadButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F21C5CE3891C797B4DDA24901416374 /* InStatDownloadButton-dummy.m */; };
-		375C2691376DD6530F71C120F7E261DB /* ComparableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEB810DC442ECF99B177B3B6B32BEA7 /* ComparableExtension.swift */; };
+		1065DFF854096F0645A18987EA4EC12C /* InStatEventlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E791B4320D0841D044BDA64800A10 /* InStatEventlistView.swift */; };
+		26A75BB883233D2BE4799D972A48035C /* InStatDownloadButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6100D99EB6BCC672840AD70263069F0 /* InStatDownloadButton-dummy.m */; };
+		375C2691376DD6530F71C120F7E261DB /* ComparableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE26A67F85D7F43FA6529EB80E027EC /* ComparableExtension.swift */; };
 		46C191ADB51AB7190FE510D5913EF4A5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733E50F96569C3AD359331A906E68465 /* MapKit.framework */; };
-		60760F4BE609B78B07B6147AC7FDC54A /* InStatCircularProgressViewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700A803C1A9AA221BC222EE9BCB6F85B /* InStatCircularProgressViewLayer.swift */; };
-		6134861524845C3C18C149527C426752 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C115E0D2CF880E3B478B1227082DED2A /* Utility.swift */; };
-		70CAE381760052B7A152F837F7B002F6 /* InStatEventlistProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9326643AB7300F01D1509DAF726F543E /* InStatEventlistProtocols.swift */; };
-		72ADE19A0B15F039C2054A42390936A7 /* InStatPendingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72857887DA411559D434E99E599AF4F /* InStatPendingIndicator.swift */; };
+		60760F4BE609B78B07B6147AC7FDC54A /* InStatCircularProgressViewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27C76BF8A4BFF8A63EC27415507F57 /* InStatCircularProgressViewLayer.swift */; };
+		6134861524845C3C18C149527C426752 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62BC2A619F66615DC4244E82C2EBF3F /* Utility.swift */; };
+		70CAE381760052B7A152F837F7B002F6 /* InStatEventlistProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE37B2055A9296C4CAEF570AAEA4F6CF /* InStatEventlistProtocols.swift */; };
+		72ADE19A0B15F039C2054A42390936A7 /* InStatPendingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B9280F6815D739374F782FAD337C6 /* InStatPendingIndicator.swift */; };
 		780C85E3D942853D267D04C5D5234DF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676971B837B48B5B8367D177D1CAE68E /* UIKit.framework */; };
 		7B5AA962B41037CD8E522E19BF8E6104 /* Pods-InStatEventlistView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F3B0464211676C8826FB015A1A01B5 /* Pods-InStatEventlistView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CC11B7C6802E1FF98E9219C6D5B87AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3F7B84FAFD1F17263A1C3264AD3FC /* Color.swift */; };
-		8128368122A4138DB7686804637233B6 /* InStatDownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9719DA14D5C7CA88E1D719FCB0836872 /* InStatDownloadButton.swift */; };
-		8FBCC30E265B30C7856CCC4256E8948C /* InStatDownloadButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747FB9AAE34BEECCC230190B9A3E5E3B /* InStatDownloadButtonState.swift */; };
+		7CC11B7C6802E1FF98E9219C6D5B87AB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92DD1359F2A1E81755EAFB042E28030 /* Color.swift */; };
+		8128368122A4138DB7686804637233B6 /* InStatDownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928665EF4FE32D01B7BB7646B9178648 /* InStatDownloadButton.swift */; };
+		8FBCC30E265B30C7856CCC4256E8948C /* InStatDownloadButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967CEFF3EE149D906065DF75B1D169FE /* InStatDownloadButtonState.swift */; };
 		97D82DD6FCC17FBFC3E7A69BDF4522DE /* Pods-InStatEventlistView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB2B5438D61081A8F3CC6107671B799 /* Pods-InStatEventlistView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		984E32D6224AB2F92BF5FFE762C1F19C /* InStatEpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A141023FB4F1E4D49F255B70888DEA /* InStatEpisodeCell.swift */; };
+		984E32D6224AB2F92BF5FFE762C1F19C /* InStatEpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0014996052D7E8A3A835B3550FDC6E6 /* InStatEpisodeCell.swift */; };
 		9EFD1AECCE4BCF76885A9C5BBC8FB53F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8F02D971DF8C78FF3344B6DB227CFC /* Foundation.framework */; };
-		A0C62058A38EDC3625A0324D2CDC16AD /* InStatEventlistView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 697B5D2713DCBEFD7645277E05DD4685 /* InStatEventlistView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C62058A38EDC3625A0324D2CDC16AD /* InStatEventlistView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E116A092D4EAE07CFFC5F59D963D2B48 /* InStatEventlistView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABE27E5687B3A0FB0857374E1B4ABED6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8F02D971DF8C78FF3344B6DB227CFC /* Foundation.framework */; };
-		ABEE7AE8558A07896D13E139D55E9A0F /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B4FB07A61D2539479DC7696462E86 /* NSNotificationExtension.swift */; };
+		ABEE7AE8558A07896D13E139D55E9A0F /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBA495E67921E7F48A2025B09F3C66C /* NSNotificationExtension.swift */; };
 		B516D77453BEF79C785748EC60E54113 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8F02D971DF8C78FF3344B6DB227CFC /* Foundation.framework */; };
 		B9A4E2D97B40BD437B1A7338D6B65214 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676971B837B48B5B8367D177D1CAE68E /* UIKit.framework */; };
-		BDF4DC7C7E6A098588235175D6CABABB /* InStatEventlistViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3FA332DE164A3FE3EB4613EFAE1EAB /* InStatEventlistViewAssets.xcassets */; };
-		BFF4C33C30EA83FF62C10FC8D13E1311 /* InStatEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58FC941A8D1243B2755FE58C47783CB /* InStatEventCell.swift */; };
-		C2A7276D01C4882420C9758C5C5D95E5 /* GlowMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D667EC6D2052E4A56CB3AC6914EA68 /* GlowMode.swift */; };
-		C3B4C820AEC572AEBB96F2409C112DCF /* InStatDownloadButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE988317AB92DB6FBF0D1BED54FB6CF /* InStatDownloadButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDF4DC7C7E6A098588235175D6CABABB /* InStatEventlistViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09E14A7B8E45A9541166B63C6BACC191 /* InStatEventlistViewAssets.xcassets */; };
+		BFF4C33C30EA83FF62C10FC8D13E1311 /* InStatEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7D17BF888A8FE9DF9177089F42B197 /* InStatEventCell.swift */; };
+		C2A7276D01C4882420C9758C5C5D95E5 /* GlowMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C44FBD0FA6E98C8343888B2661202A1 /* GlowMode.swift */; };
+		C3B4C820AEC572AEBB96F2409C112DCF /* InStatDownloadButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A8E3C8125BF99447EBBD96D9568D7D /* InStatDownloadButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C544BB4863574C1C42D31A56718EFA4B /* Pods-InStatEventlistView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */; };
 		DB34F1D9C6F21A4DE7022B803FB38751 /* InStatDownloadButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 475F3434AD3B117711EE90E76FFD801A /* InStatDownloadButton.framework */; };
-		F0C4C696A7A1F8EAA074956280BED228 /* InStatCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92076A9D198A554B51F2CCE98C1EE2 /* InStatCircularProgress.swift */; };
-		F1D406E0FCCE3F902AB042084ECDE35C /* InStatPickerPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2FB8795E244BD4FAD0D183B83B3E2 /* InStatPickerPort.swift */; };
+		F0C4C696A7A1F8EAA074956280BED228 /* InStatCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FC871A9D4970D3E5AE8C81F3D83C1A /* InStatCircularProgress.swift */; };
+		F1D406E0FCCE3F902AB042084ECDE35C /* InStatPickerPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CBF1273DB917EC6AE66EE64F9D5564 /* InStatPickerPort.swift */; };
 		F626B02D9BAB1024CD472F42AC3EFE58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8F02D971DF8C78FF3344B6DB227CFC /* Foundation.framework */; };
-		FA11022D2878729631CDEA99A39C2AA8 /* InStatEventlistView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B3A35CC3199F84D12472D6489C581C /* InStatEventlistView-dummy.m */; };
+		FA11022D2878729631CDEA99A39C2AA8 /* InStatEventlistView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C047D5B69DDFCC2B45A733E2B0A52DA1 /* InStatEventlistView-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,61 +75,58 @@
 
 /* Begin PBXFileReference section */
 		07F297D87B6B6157E9B2883A5B0AE162 /* Pods-InStatEventlistView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InStatEventlistView_Tests.modulemap"; sourceTree = "<group>"; };
+		09E14A7B8E45A9541166B63C6BACC191 /* InStatEventlistViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = InStatEventlistViewAssets.xcassets; path = InStatEventlistView/Assets/InStatEventlistViewAssets.xcassets; sourceTree = "<group>"; };
+		0A7D17BF888A8FE9DF9177089F42B197 /* InStatEventCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventCell.swift; path = InStatEventlistView/Classes/InStatEventCell.swift; sourceTree = "<group>"; };
+		0C44FBD0FA6E98C8343888B2661202A1 /* GlowMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlowMode.swift; path = InStatDownloadButton/Classes/GlowMode.swift; sourceTree = "<group>"; };
 		141C4881EE46DC88E95E7AE5FA29702A /* Pods_InStatEventlistView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InStatEventlistView_Tests.framework; path = "Pods-InStatEventlistView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17A141023FB4F1E4D49F255B70888DEA /* InStatEpisodeCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEpisodeCell.swift; path = InStatEventlistView/Classes/InStatEpisodeCell.swift; sourceTree = "<group>"; };
 		2925F39D2A26C017DF6A95AE16FC1EEE /* Pods-InStatEventlistView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InStatEventlistView_Example.modulemap"; sourceTree = "<group>"; };
 		2C0D5E767568EFF699F7DDC33A9E049D /* Pods-InStatEventlistView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2FF88065D4F831A6F7369C063A6B49B1 /* Pods-InStatEventlistView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InStatEventlistView_Tests-dummy.m"; sourceTree = "<group>"; };
-		388F1D6B6172EB9F6329E19AE1DCDF56 /* InStatDownloadButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InStatDownloadButton.modulemap; sourceTree = "<group>"; };
 		3D288C7E490CD3AB020BE9DC88CE3B48 /* Pods-InStatEventlistView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InStatEventlistView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		40A937B6F7BD4D9470EE3882B6BC2CD1 /* Pods-InStatEventlistView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Example-Info.plist"; sourceTree = "<group>"; };
+		45A8E3C8125BF99447EBBD96D9568D7D /* InStatDownloadButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatDownloadButton-umbrella.h"; sourceTree = "<group>"; };
+		461E791B4320D0841D044BDA64800A10 /* InStatEventlistView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventlistView.swift; path = InStatEventlistView/Classes/InStatEventlistView.swift; sourceTree = "<group>"; };
 		463AF5BA8F9BC5BDB3214D0BF071A608 /* Pods-InStatEventlistView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Tests-Info.plist"; sourceTree = "<group>"; };
 		475F3434AD3B117711EE90E76FFD801A /* InStatDownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InStatDownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FE988317AB92DB6FBF0D1BED54FB6CF /* InStatDownloadButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatDownloadButton-umbrella.h"; sourceTree = "<group>"; };
-		52D2FB8795E244BD4FAD0D183B83B3E2 /* InStatPickerPort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatPickerPort.swift; path = InStatEventlistView/Classes/InStatPickerPort.swift; sourceTree = "<group>"; };
-		5446EC26F3DE172EAF99CC84B383ED44 /* InStatDownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatDownloadButton-prefix.pch"; sourceTree = "<group>"; };
-		5C3FA332DE164A3FE3EB4613EFAE1EAB /* InStatEventlistViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = InStatEventlistViewAssets.xcassets; path = InStatEventlistView/Assets/InStatEventlistViewAssets.xcassets; sourceTree = "<group>"; };
-		5F21C5CE3891C797B4DDA24901416374 /* InStatDownloadButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InStatDownloadButton-dummy.m"; sourceTree = "<group>"; };
+		47CBF1273DB917EC6AE66EE64F9D5564 /* InStatPickerPort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatPickerPort.swift; path = InStatEventlistView/Classes/InStatPickerPort.swift; sourceTree = "<group>"; };
+		52FC871A9D4970D3E5AE8C81F3D83C1A /* InStatCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatCircularProgress.swift; path = InStatDownloadButton/Classes/InStatCircularProgress.swift; sourceTree = "<group>"; };
+		5E27C76BF8A4BFF8A63EC27415507F57 /* InStatCircularProgressViewLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatCircularProgressViewLayer.swift; path = InStatDownloadButton/Classes/InStatCircularProgressViewLayer.swift; sourceTree = "<group>"; };
 		615921688C3EF18B3B08C5922EF2AAEE /* Pods-InStatEventlistView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InStatEventlistView_Example-dummy.m"; sourceTree = "<group>"; };
-		657FD2D5D57516BCFFE0A010BE931C15 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		65D667EC6D2052E4A56CB3AC6914EA68 /* GlowMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlowMode.swift; path = InStatDownloadButton/Classes/GlowMode.swift; sourceTree = "<group>"; };
 		676971B837B48B5B8367D177D1CAE68E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		697B5D2713DCBEFD7645277E05DD4685 /* InStatEventlistView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-umbrella.h"; sourceTree = "<group>"; };
-		700A803C1A9AA221BC222EE9BCB6F85B /* InStatCircularProgressViewLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatCircularProgressViewLayer.swift; path = InStatDownloadButton/Classes/InStatCircularProgressViewLayer.swift; sourceTree = "<group>"; };
-		72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatDownloadButton.xcconfig; sourceTree = "<group>"; };
 		733E50F96569C3AD359331A906E68465 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
-		74576038DBD5BB7BBBD356674709317A /* InStatEventlistView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventlistView.swift; path = InStatEventlistView/Classes/InStatEventlistView.swift; sourceTree = "<group>"; };
-		747FB9AAE34BEECCC230190B9A3E5E3B /* InStatDownloadButtonState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatDownloadButtonState.swift; path = InStatDownloadButton/Classes/InStatDownloadButtonState.swift; sourceTree = "<group>"; };
-		7C8B4FB07A61D2539479DC7696462E86 /* NSNotificationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNotificationExtension.swift; path = InStatDownloadButton/Classes/NSNotificationExtension.swift; sourceTree = "<group>"; };
+		7412847AA215CE418A7675F2CBE699D7 /* InStatEventlistView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatEventlistView.xcconfig; sourceTree = "<group>"; };
+		74BA9B5DA23FEEAF4343739824AF2678 /* InStatEventlistView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatEventlistView-Info.plist"; sourceTree = "<group>"; };
+		78BD6CC72ABA94BE0D2825EE2D63E65A /* InStatEventlistView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-prefix.pch"; sourceTree = "<group>"; };
 		8296CEA24D3E9DA96764B73746C0E301 /* InStatEventlistView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InStatEventlistView.framework; path = InStatEventlistView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B4D919CA45F6FC5AE7BB35D0A15DD0 /* Pods_InStatEventlistView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InStatEventlistView_Example.framework; path = "Pods-InStatEventlistView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4F04F5FD0000F20417DCCEAD47DE9 /* Pods-InStatEventlistView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		88B3A35CC3199F84D12472D6489C581C /* InStatEventlistView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InStatEventlistView-dummy.m"; sourceTree = "<group>"; };
-		8AF3F7B84FAFD1F17263A1C3264AD3FC /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = InStatDownloadButton/Classes/Color.swift; sourceTree = "<group>"; };
-		9326643AB7300F01D1509DAF726F543E /* InStatEventlistProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventlistProtocols.swift; path = InStatEventlistView/Classes/InStatEventlistProtocols.swift; sourceTree = "<group>"; };
-		9719DA14D5C7CA88E1D719FCB0836872 /* InStatDownloadButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatDownloadButton.swift; path = InStatDownloadButton/Classes/InStatDownloadButton.swift; sourceTree = "<group>"; };
+		928665EF4FE32D01B7BB7646B9178648 /* InStatDownloadButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatDownloadButton.swift; path = InStatDownloadButton/Classes/InStatDownloadButton.swift; sourceTree = "<group>"; };
+		942C0582B5954B28AB173CB1462F978B /* InStatDownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatDownloadButton-prefix.pch"; sourceTree = "<group>"; };
+		967CEFF3EE149D906065DF75B1D169FE /* InStatDownloadButtonState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatDownloadButtonState.swift; path = InStatDownloadButton/Classes/InStatDownloadButtonState.swift; sourceTree = "<group>"; };
+		9BD2473FEA9E6FBBBCC2469FBC5659B9 /* InStatEventlistView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InStatEventlistView.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A10F7F2195E288DC7365D990E8F6AEF1 /* InStatDownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatDownloadButton.xcconfig; sourceTree = "<group>"; };
 		A2CA80C08599C6540A994544F616B8DB /* InStatDownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InStatDownloadButton.framework; path = InStatDownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76A5DFDC03293B0655A07837EA7FE82 /* Pods-InStatEventlistView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InStatEventlistView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B295890F432DFABD6A39863DF6D2D1C6 /* InStatEventlistView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-prefix.pch"; sourceTree = "<group>"; };
-		B54885FD52414552EAD10CD9C1508869 /* Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Conversion.swift; path = InStatDownloadButton/Classes/Conversion.swift; sourceTree = "<group>"; };
-		C115E0D2CF880E3B478B1227082DED2A /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = InStatDownloadButton/Classes/Utility.swift; sourceTree = "<group>"; };
-		CFEB810DC442ECF99B177B3B6B32BEA7 /* ComparableExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComparableExtension.swift; path = InStatDownloadButton/Classes/ComparableExtension.swift; sourceTree = "<group>"; };
+		ACFAD0738ECC0361703EFCCC747F5A99 /* Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Conversion.swift; path = InStatDownloadButton/Classes/Conversion.swift; sourceTree = "<group>"; };
+		B4D4515B7F6F90C632CFBF5D3EBF66D9 /* InStatDownloadButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatDownloadButton-Info.plist"; sourceTree = "<group>"; };
+		B6100D99EB6BCC672840AD70263069F0 /* InStatDownloadButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InStatDownloadButton-dummy.m"; sourceTree = "<group>"; };
+		BBE26A67F85D7F43FA6529EB80E027EC /* ComparableExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ComparableExtension.swift; path = InStatDownloadButton/Classes/ComparableExtension.swift; sourceTree = "<group>"; };
+		BE37B2055A9296C4CAEF570AAEA4F6CF /* InStatEventlistProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventlistProtocols.swift; path = InStatEventlistView/Classes/InStatEventlistProtocols.swift; sourceTree = "<group>"; };
+		BFBA495E67921E7F48A2025B09F3C66C /* NSNotificationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSNotificationExtension.swift; path = InStatDownloadButton/Classes/NSNotificationExtension.swift; sourceTree = "<group>"; };
+		C047D5B69DDFCC2B45A733E2B0A52DA1 /* InStatEventlistView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InStatEventlistView-dummy.m"; sourceTree = "<group>"; };
+		C62BC2A619F66615DC4244E82C2EBF3F /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = InStatDownloadButton/Classes/Utility.swift; sourceTree = "<group>"; };
+		D0014996052D7E8A3A835B3550FDC6E6 /* InStatEpisodeCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEpisodeCell.swift; path = InStatEventlistView/Classes/InStatEpisodeCell.swift; sourceTree = "<group>"; };
+		D2AFE2AE522C77E1EDE5C5021BE17BB5 /* InStatDownloadButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InStatDownloadButton.modulemap; sourceTree = "<group>"; };
 		D4C50136C2F0FAF55639212AFCD02A5E /* Pods-InStatEventlistView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D70DDD76DDB0596266678DF377E0D2FE /* Pods-InStatEventlistView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D72857887DA411559D434E99E599AF4F /* InStatPendingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatPendingIndicator.swift; path = InStatDownloadButton/Classes/InStatPendingIndicator.swift; sourceTree = "<group>"; };
-		D9B9DB077958BD1A88D1058979CC538D /* InStatDownloadButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatDownloadButton-Info.plist"; sourceTree = "<group>"; };
 		DF8F02D971DF8C78FF3344B6DB227CFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DFD0E708B37AADD9B0A10111C2B415D0 /* InStatEventlistView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = InStatEventlistView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		E03A8023697893A7338E08991DA6827C /* InStatEventlistView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InStatEventlistView.modulemap; sourceTree = "<group>"; };
 		E0BA1FCE92568002F79B3A7263E406FF /* Pods-InStatEventlistView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E58FC941A8D1243B2755FE58C47783CB /* InStatEventCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventCell.swift; path = InStatEventlistView/Classes/InStatEventCell.swift; sourceTree = "<group>"; };
-		EA84BA0D553D1A107A3DC48902D9F37E /* InStatEventlistView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatEventlistView-Info.plist"; sourceTree = "<group>"; };
-		EA92076A9D198A554B51F2CCE98C1EE2 /* InStatCircularProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatCircularProgress.swift; path = InStatDownloadButton/Classes/InStatCircularProgress.swift; sourceTree = "<group>"; };
-		EC8B920060234838BF4ED63EB93041D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E116A092D4EAE07CFFC5F59D963D2B48 /* InStatEventlistView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-umbrella.h"; sourceTree = "<group>"; };
+		E92DD1359F2A1E81755EAFB042E28030 /* Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Color.swift; path = InStatDownloadButton/Classes/Color.swift; sourceTree = "<group>"; };
+		ED2B9280F6815D739374F782FAD337C6 /* InStatPendingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatPendingIndicator.swift; path = InStatDownloadButton/Classes/InStatPendingIndicator.swift; sourceTree = "<group>"; };
 		F4F3B0464211676C8826FB015A1A01B5 /* Pods-InStatEventlistView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InStatEventlistView_Example-umbrella.h"; sourceTree = "<group>"; };
 		F98D980E17F7391CEE701F5C269747C6 /* Pods-InStatEventlistView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InStatEventlistView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		FB6915F047BC136AA4131376E8D21CFD /* InStatEventlistView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatEventlistView.xcconfig; sourceTree = "<group>"; };
 		FBB2B5438D61081A8F3CC6107671B799 /* Pods-InStatEventlistView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InStatEventlistView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		FEF484A66AEC950E4FF403463AE43155 /* Pods-InStatEventlistView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InStatEventlistView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,12 +180,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		05A9000C247723C4B80E6F5B6066CF1A /* Resources */ = {
+		0B950C798E1E10EDE81153EF5B0DB712 /* InStatDownloadButton */ = {
 			isa = PBXGroup;
 			children = (
-				5C3FA332DE164A3FE3EB4613EFAE1EAB /* InStatEventlistViewAssets.xcassets */,
+				E92DD1359F2A1E81755EAFB042E28030 /* Color.swift */,
+				BBE26A67F85D7F43FA6529EB80E027EC /* ComparableExtension.swift */,
+				ACFAD0738ECC0361703EFCCC747F5A99 /* Conversion.swift */,
+				0C44FBD0FA6E98C8343888B2661202A1 /* GlowMode.swift */,
+				52FC871A9D4970D3E5AE8C81F3D83C1A /* InStatCircularProgress.swift */,
+				5E27C76BF8A4BFF8A63EC27415507F57 /* InStatCircularProgressViewLayer.swift */,
+				928665EF4FE32D01B7BB7646B9178648 /* InStatDownloadButton.swift */,
+				967CEFF3EE149D906065DF75B1D169FE /* InStatDownloadButtonState.swift */,
+				ED2B9280F6815D739374F782FAD337C6 /* InStatPendingIndicator.swift */,
+				BFBA495E67921E7F48A2025B09F3C66C /* NSNotificationExtension.swift */,
+				C62BC2A619F66615DC4244E82C2EBF3F /* Utility.swift */,
+				B6EBD216A1B283446B4BAC6880E019E6 /* Support Files */,
 			);
-			name = Resources;
+			name = InStatDownloadButton;
+			path = InStatDownloadButton;
+			sourceTree = "<group>";
+		};
+		108EB10AE0037BC279022A48BC7125B6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BD2473FEA9E6FBBBCC2469FBC5659B9 /* InStatEventlistView.modulemap */,
+				7412847AA215CE418A7675F2CBE699D7 /* InStatEventlistView.xcconfig */,
+				C047D5B69DDFCC2B45A733E2B0A52DA1 /* InStatEventlistView-dummy.m */,
+				74BA9B5DA23FEEAF4343739824AF2678 /* InStatEventlistView-Info.plist */,
+				78BD6CC72ABA94BE0D2825EE2D63E65A /* InStatEventlistView-prefix.pch */,
+				E116A092D4EAE07CFFC5F59D963D2B48 /* InStatEventlistView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InStatEventlistView";
+			sourceTree = "<group>";
+		};
+		13385F344CA647BAD791035D500BC306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B950C798E1E10EDE81153EF5B0DB712 /* InStatDownloadButton */,
+				E7076463F2E70F5719B970A2DE00B7AE /* InStatEventlistView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		2CB44D1071FC90B612EC17B2A03331F2 /* Pods-InStatEventlistView_Tests */ = {
@@ -207,14 +239,6 @@
 			path = "Target Support Files/Pods-InStatEventlistView_Tests";
 			sourceTree = "<group>";
 		};
-		394B013F594F83B6881DAC008C8F2703 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9AAB69CA5C85F795E806315EFE42EDFE /* InStatEventlistView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		3DBAA7E2E143A54DA8646DCEC8E36A22 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,44 +248,6 @@
 				141C4881EE46DC88E95E7AE5FA29702A /* Pods_InStatEventlistView_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		6481D6F89BC4ECD1D592508670064BE6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				388F1D6B6172EB9F6329E19AE1DCDF56 /* InStatDownloadButton.modulemap */,
-				72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */,
-				5F21C5CE3891C797B4DDA24901416374 /* InStatDownloadButton-dummy.m */,
-				D9B9DB077958BD1A88D1058979CC538D /* InStatDownloadButton-Info.plist */,
-				5446EC26F3DE172EAF99CC84B383ED44 /* InStatDownloadButton-prefix.pch */,
-				4FE988317AB92DB6FBF0D1BED54FB6CF /* InStatDownloadButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/InStatDownloadButton";
-			sourceTree = "<group>";
-		};
-		7C8978ADF91C692E34C92B918974C94B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				CAEA914926E968A612DDE650EAFE6218 /* InStatDownloadButton */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		9AAB69CA5C85F795E806315EFE42EDFE /* InStatEventlistView */ = {
-			isa = PBXGroup;
-			children = (
-				17A141023FB4F1E4D49F255B70888DEA /* InStatEpisodeCell.swift */,
-				E58FC941A8D1243B2755FE58C47783CB /* InStatEventCell.swift */,
-				9326643AB7300F01D1509DAF726F543E /* InStatEventlistProtocols.swift */,
-				74576038DBD5BB7BBBD356674709317A /* InStatEventlistView.swift */,
-				52D2FB8795E244BD4FAD0D183B83B3E2 /* InStatPickerPort.swift */,
-				D74017D9FA68A114D5AC979FB078764A /* Pod */,
-				05A9000C247723C4B80E6F5B6066CF1A /* Resources */,
-				C983887831DF8FCFF488E4DC72DBE523 /* Support Files */,
-			);
-			name = InStatEventlistView;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		ACEC6E597EFF9B9280F58EEAD76C8D99 /* Pods-InStatEventlistView_Example */ = {
@@ -279,6 +265,20 @@
 			);
 			name = "Pods-InStatEventlistView_Example";
 			path = "Target Support Files/Pods-InStatEventlistView_Example";
+			sourceTree = "<group>";
+		};
+		B6EBD216A1B283446B4BAC6880E019E6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2AFE2AE522C77E1EDE5C5021BE17BB5 /* InStatDownloadButton.modulemap */,
+				A10F7F2195E288DC7365D990E8F6AEF1 /* InStatDownloadButton.xcconfig */,
+				B6100D99EB6BCC672840AD70263069F0 /* InStatDownloadButton-dummy.m */,
+				B4D4515B7F6F90C632CFBF5D3EBF66D9 /* InStatDownloadButton-Info.plist */,
+				942C0582B5954B28AB173CB1462F978B /* InStatDownloadButton-prefix.pch */,
+				45A8E3C8125BF99447EBBD96D9568D7D /* InStatDownloadButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InStatDownloadButton";
 			sourceTree = "<group>";
 		};
 		B6FFBF38E520A1D6C92046A89441A85E /* Targets Support Files */ = {
@@ -300,60 +300,38 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		C983887831DF8FCFF488E4DC72DBE523 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E03A8023697893A7338E08991DA6827C /* InStatEventlistView.modulemap */,
-				FB6915F047BC136AA4131376E8D21CFD /* InStatEventlistView.xcconfig */,
-				88B3A35CC3199F84D12472D6489C581C /* InStatEventlistView-dummy.m */,
-				EA84BA0D553D1A107A3DC48902D9F37E /* InStatEventlistView-Info.plist */,
-				B295890F432DFABD6A39863DF6D2D1C6 /* InStatEventlistView-prefix.pch */,
-				697B5D2713DCBEFD7645277E05DD4685 /* InStatEventlistView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/InStatEventlistView";
-			sourceTree = "<group>";
-		};
-		CAEA914926E968A612DDE650EAFE6218 /* InStatDownloadButton */ = {
-			isa = PBXGroup;
-			children = (
-				8AF3F7B84FAFD1F17263A1C3264AD3FC /* Color.swift */,
-				CFEB810DC442ECF99B177B3B6B32BEA7 /* ComparableExtension.swift */,
-				B54885FD52414552EAD10CD9C1508869 /* Conversion.swift */,
-				65D667EC6D2052E4A56CB3AC6914EA68 /* GlowMode.swift */,
-				EA92076A9D198A554B51F2CCE98C1EE2 /* InStatCircularProgress.swift */,
-				700A803C1A9AA221BC222EE9BCB6F85B /* InStatCircularProgressViewLayer.swift */,
-				9719DA14D5C7CA88E1D719FCB0836872 /* InStatDownloadButton.swift */,
-				747FB9AAE34BEECCC230190B9A3E5E3B /* InStatDownloadButtonState.swift */,
-				D72857887DA411559D434E99E599AF4F /* InStatPendingIndicator.swift */,
-				7C8B4FB07A61D2539479DC7696462E86 /* NSNotificationExtension.swift */,
-				C115E0D2CF880E3B478B1227082DED2A /* Utility.swift */,
-				6481D6F89BC4ECD1D592508670064BE6 /* Support Files */,
-			);
-			name = InStatDownloadButton;
-			path = InStatDownloadButton;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				394B013F594F83B6881DAC008C8F2703 /* Development Pods */,
 				0332D06FE5CF619E600624342E006292 /* Frameworks */,
-				7C8978ADF91C692E34C92B918974C94B /* Pods */,
+				13385F344CA647BAD791035D500BC306 /* Pods */,
 				3DBAA7E2E143A54DA8646DCEC8E36A22 /* Products */,
 				B6FFBF38E520A1D6C92046A89441A85E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D74017D9FA68A114D5AC979FB078764A /* Pod */ = {
+		E7076463F2E70F5719B970A2DE00B7AE /* InStatEventlistView */ = {
 			isa = PBXGroup;
 			children = (
-				DFD0E708B37AADD9B0A10111C2B415D0 /* InStatEventlistView.podspec */,
-				EC8B920060234838BF4ED63EB93041D5 /* LICENSE */,
-				657FD2D5D57516BCFFE0A010BE931C15 /* README.md */,
+				D0014996052D7E8A3A835B3550FDC6E6 /* InStatEpisodeCell.swift */,
+				0A7D17BF888A8FE9DF9177089F42B197 /* InStatEventCell.swift */,
+				BE37B2055A9296C4CAEF570AAEA4F6CF /* InStatEventlistProtocols.swift */,
+				461E791B4320D0841D044BDA64800A10 /* InStatEventlistView.swift */,
+				47CBF1273DB917EC6AE66EE64F9D5564 /* InStatPickerPort.swift */,
+				F69BCBD826CAEEDF51461350813B05C9 /* Resources */,
+				108EB10AE0037BC279022A48BC7125B6 /* Support Files */,
 			);
-			name = Pod;
+			name = InStatEventlistView;
+			path = InStatEventlistView;
+			sourceTree = "<group>";
+		};
+		F69BCBD826CAEEDF51461350813B05C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09E14A7B8E45A9541166B63C6BACC191 /* InStatEventlistViewAssets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,7 +624,7 @@
 		};
 		260468361B9536E66FD7DDF516CF6609 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB6915F047BC136AA4131376E8D21CFD /* InStatEventlistView.xcconfig */;
+			baseConfigurationReference = 7412847AA215CE418A7675F2CBE699D7 /* InStatEventlistView.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -739,7 +717,7 @@
 		};
 		40AFEFDF1BA0E0760002921DCA862234 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */;
+			baseConfigurationReference = A10F7F2195E288DC7365D990E8F6AEF1 /* InStatDownloadButton.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -835,7 +813,7 @@
 		};
 		6E7DF16A66279C738F8CBDC13B0F75B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72893C19BE3D1342E00D5691D34D9923 /* InStatDownloadButton.xcconfig */;
+			baseConfigurationReference = A10F7F2195E288DC7365D990E8F6AEF1 /* InStatDownloadButton.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -938,7 +916,7 @@
 		};
 		D2C5E05DB3C2ED7C3A3EC0365EB7CBA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB6915F047BC136AA4131376E8D21CFD /* InStatEventlistView.xcconfig */;
+			baseConfigurationReference = 7412847AA215CE418A7675F2CBE699D7 /* InStatEventlistView.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";

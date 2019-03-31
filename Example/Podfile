@@ -2,7 +2,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'InStatEventlistView_Example' do
-  pod 'InStatEventlistView', :path => '../'
+  pod 'InStatEventlistView'
 	pod 'InStatDownloadButton'
 
   target 'InStatEventlistView_Tests' do
