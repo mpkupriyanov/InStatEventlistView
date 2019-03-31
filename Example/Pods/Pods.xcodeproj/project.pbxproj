@@ -78,7 +78,7 @@
 		09E14A7B8E45A9541166B63C6BACC191 /* InStatEventlistViewAssets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = InStatEventlistViewAssets.xcassets; path = InStatEventlistView/Assets/InStatEventlistViewAssets.xcassets; sourceTree = "<group>"; };
 		0A7D17BF888A8FE9DF9177089F42B197 /* InStatEventCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatEventCell.swift; path = InStatEventlistView/Classes/InStatEventCell.swift; sourceTree = "<group>"; };
 		0C44FBD0FA6E98C8343888B2661202A1 /* GlowMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlowMode.swift; path = InStatDownloadButton/Classes/GlowMode.swift; sourceTree = "<group>"; };
-		141C4881EE46DC88E95E7AE5FA29702A /* Pods_InStatEventlistView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InStatEventlistView_Tests.framework; path = "Pods-InStatEventlistView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141C4881EE46DC88E95E7AE5FA29702A /* Pods_InStatEventlistView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InStatEventlistView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2925F39D2A26C017DF6A95AE16FC1EEE /* Pods-InStatEventlistView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InStatEventlistView_Example.modulemap"; sourceTree = "<group>"; };
 		2C0D5E767568EFF699F7DDC33A9E049D /* Pods-InStatEventlistView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2FF88065D4F831A6F7369C063A6B49B1 /* Pods-InStatEventlistView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InStatEventlistView_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -97,16 +97,16 @@
 		7412847AA215CE418A7675F2CBE699D7 /* InStatEventlistView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatEventlistView.xcconfig; sourceTree = "<group>"; };
 		74BA9B5DA23FEEAF4343739824AF2678 /* InStatEventlistView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatEventlistView-Info.plist"; sourceTree = "<group>"; };
 		78BD6CC72ABA94BE0D2825EE2D63E65A /* InStatEventlistView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatEventlistView-prefix.pch"; sourceTree = "<group>"; };
-		8296CEA24D3E9DA96764B73746C0E301 /* InStatEventlistView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InStatEventlistView.framework; path = InStatEventlistView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84B4D919CA45F6FC5AE7BB35D0A15DD0 /* Pods_InStatEventlistView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InStatEventlistView_Example.framework; path = "Pods-InStatEventlistView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8296CEA24D3E9DA96764B73746C0E301 /* InStatEventlistView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InStatEventlistView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B4D919CA45F6FC5AE7BB35D0A15DD0 /* Pods_InStatEventlistView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InStatEventlistView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B4F04F5FD0000F20417DCCEAD47DE9 /* Pods-InStatEventlistView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InStatEventlistView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		928665EF4FE32D01B7BB7646B9178648 /* InStatDownloadButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatDownloadButton.swift; path = InStatDownloadButton/Classes/InStatDownloadButton.swift; sourceTree = "<group>"; };
 		942C0582B5954B28AB173CB1462F978B /* InStatDownloadButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InStatDownloadButton-prefix.pch"; sourceTree = "<group>"; };
 		967CEFF3EE149D906065DF75B1D169FE /* InStatDownloadButtonState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InStatDownloadButtonState.swift; path = InStatDownloadButton/Classes/InStatDownloadButtonState.swift; sourceTree = "<group>"; };
 		9BD2473FEA9E6FBBBCC2469FBC5659B9 /* InStatEventlistView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InStatEventlistView.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A10F7F2195E288DC7365D990E8F6AEF1 /* InStatDownloadButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InStatDownloadButton.xcconfig; sourceTree = "<group>"; };
-		A2CA80C08599C6540A994544F616B8DB /* InStatDownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InStatDownloadButton.framework; path = InStatDownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2CA80C08599C6540A994544F616B8DB /* InStatDownloadButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InStatDownloadButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76A5DFDC03293B0655A07837EA7FE82 /* Pods-InStatEventlistView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InStatEventlistView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACFAD0738ECC0361703EFCCC747F5A99 /* Conversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Conversion.swift; path = InStatDownloadButton/Classes/Conversion.swift; sourceTree = "<group>"; };
 		B4D4515B7F6F90C632CFBF5D3EBF66D9 /* InStatDownloadButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InStatDownloadButton-Info.plist"; sourceTree = "<group>"; };
@@ -196,7 +196,6 @@
 				C62BC2A619F66615DC4244E82C2EBF3F /* Utility.swift */,
 				B6EBD216A1B283446B4BAC6880E019E6 /* Support Files */,
 			);
-			name = InStatDownloadButton;
 			path = InStatDownloadButton;
 			sourceTree = "<group>";
 		};
@@ -322,7 +321,6 @@
 				F69BCBD826CAEEDF51461350813B05C9 /* Resources */,
 				108EB10AE0037BC279022A48BC7125B6 /* Support Files */,
 			);
-			name = InStatEventlistView;
 			path = InStatEventlistView;
 			sourceTree = "<group>";
 		};
@@ -462,6 +460,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -616,6 +615,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -708,8 +708,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -872,6 +871,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -907,6 +907,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -974,6 +975,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
