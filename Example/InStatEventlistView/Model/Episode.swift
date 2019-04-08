@@ -20,12 +20,15 @@ class Episode: Row {
 
 	var viewpointIndex: Int
 
+	var isControlsHidden: Bool
+
 	init(id: Int,
 		 viewpoints: [(URL, Permission)],
 		 timeRange: String,
 		 isSelection: Bool = false,
 		 isDownloaded: Bool = false,
-		 viewpointIndex: Int = 0) {
+		 viewpointIndex: Int = 0,
+		 isControlsHidden: Bool = false) {
 
 		self.id = id
 		self.viewpoints = viewpoints
@@ -33,5 +36,6 @@ class Episode: Row {
 		self.isSelection = isSelection
 		self.isDownloaded = isDownloaded
 		self.viewpointIndex = viewpointIndex
+		self.isControlsHidden = isControlsHidden
 	}
 }

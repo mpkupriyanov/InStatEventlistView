@@ -19,6 +19,7 @@ public protocol Row {
 	var isSelection: Bool { get set }
 	var viewpointIndex: Int { get set }
 	var isDownloaded: Bool { get set }
+	var isControlsHidden: Bool { get set }
 }
 
 public protocol Section {
@@ -31,4 +32,5 @@ public protocol Section {
 	var isSelection: Bool { get set }
 	var isDownloaded: Bool { get set }
 	var viewpointIndex: Int { get set }
+	var isControlsHidden: Bool { get set }
 }

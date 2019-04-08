@@ -16,12 +16,14 @@ public class InStatDownloadButton: UIButton {
 
 			switch downloadState {
 			case .start:
+				isEnabled = true
 				isSelected = true
 				indicatorView.removeFromSuperview()
 				progressView.removeFromSuperview()
 				self.setImage(image, for: .normal)
 
 			case .pending:
+				isEnabled = false
 				setImage(nil, for: .normal)
 				progressView.removeFromSuperview()
 				addSubview(indicatorView)
@@ -29,19 +31,21 @@ public class InStatDownloadButton: UIButton {
 				indicatorView.startSpinning()
 
 			case .downloading:
+				isEnabled = true
 				indicatorView.removeFromSuperview()
 				setImage(nil, for: .normal)
 				addSubview(progressView)
 				setupProgressConstraints()
 
 			case .stop:
+				isEnabled = true
 				isSelected = false
 				indicatorView.removeFromSuperview()
 				progressView.removeFromSuperview()
 				self.setImage(image, for: .normal)
 
 			case .finish:
-				setImage(nil, for: .normal)
+				isHidden = true
 				indicatorView.removeFromSuperview()
 				progressView.removeFromSuperview()
 			}

@@ -117,8 +117,14 @@ open class InStatEpisodeCell: UITableViewCell {
 		selection.isSelected = row.isSelection
 		item = row
 		self.indexPath = indexPath
-
 		downloadButton.isHidden = row.isDownloaded
+
+		if row.isControlsHidden {
+
+			downloadButton.isHidden = row.isControlsHidden
+			shareButton.isHidden = row.isControlsHidden
+			selection.isHidden = row.isControlsHidden
+		}
 
 		// if viewpoints are empty or equal to 1 should hide viewpoint button
 		if !row.viewpoints.isEmpty && row.viewpoints.count > 1 {
@@ -170,18 +176,16 @@ open class InStatEpisodeCell: UITableViewCell {
 
 		addSubview(viewpoint)
 
-		if downloadButton.isHidden {
+		viewpoint.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+		viewpoint.widthAnchor.constraint(equalToConstant: 64).isActive = true
+		viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
 
+		if downloadButton.isHidden && shareButton.isHidden {
+			viewpoint.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+		} else if downloadButton.isHidden  {
 			viewpoint.rightAnchor.constraint(equalTo: shareButton.leftAnchor).isActive = true
-			viewpoint.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-			viewpoint.widthAnchor.constraint(equalToConstant: 64).isActive = true
-			viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
 		} else {
-
 			viewpoint.rightAnchor.constraint(equalTo: downloadButton.leftAnchor).isActive = true
-			viewpoint.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-			viewpoint.widthAnchor.constraint(equalToConstant: 64).isActive = true
-			viewpoint.heightAnchor.constraint(equalToConstant: 34).isActive = true
 		}
 	}
 

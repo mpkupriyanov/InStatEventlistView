@@ -2,7 +2,7 @@
 
 [![Twitter](https://img.shields.io/badge/twitter-@JiromTomson-blue.svg?style=flat
 )](https://twitter.com/JiromTomson)
-[![CI Status](https://travis-ci.org/tularovbeslan/InStatDownloadButton.svg?branch=master)](https://travis-ci.org/tularovbeslan@gmail.com/InStatDownloadButton)
+[![CI Status](https://travis-ci.org/tularovbeslan/InStatDownloadButton.svg?branch=master)](https://travis-ci.org/tularovbeslan/InStatDownloadButton)
 [![Version](https://img.shields.io/cocoapods/v/InStatDownloadButton.svg?style=flat)](https://cocoapods.org/pods/InStatDownloadButton)
 ![iOS 10.0+](https://img.shields.io/badge/iOS-10.0%2B-red.svg)
 ![Swift 5](https://img.shields.io/badge/Swift-5-orange.svg)

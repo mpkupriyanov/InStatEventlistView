@@ -94,6 +94,10 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 			let attributedString = NSAttributedString(string: "Video \(section.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.regular)])
 			viewpoint.setAttributedTitle(attributedString, for: .normal)
 		}
+
+		if section.isControlsHidden {
+			
+		}
 	}
 
 	// MARK - Setup components
