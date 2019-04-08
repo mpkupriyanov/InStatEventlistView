@@ -5,8 +5,11 @@
 osx_image: xcode10.2
 language: swift
 podfile: Example/Podfile
+xcode_workspace: Example/InStatEventlistView.xcworkspace
+xcode_scheme: InStatEventlistView-Example
 before_install:
 - gem install cocoapods 
+- pod repo update
 - pod install --project-directory=Example
 script:
 - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/InStatEventlistView.xcworkspace -scheme InStatEventlistView-Example -sdk iphonesimulator12.2 ONLY_ACTIVE_ARCH=NO | xcpretty
