@@ -72,14 +72,19 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 
 	// MARK: - Setup data
 
-	public func setup(_ section: Section, atSectionIndex sectionIndex: Int, andDelegate delegate: InStatEventCellDelegate? = nil) {
+	public func setup(_ section: Section,
+					  atSectionIndex sectionIndex: Int,
+					  andDelegate delegate: InStatEventCellDelegate? = nil,
+					  locolizedTitle: String? = nil) {
 
-		setup(section, atSectionIndex: sectionIndex)
+		setup(section, atSectionIndex: sectionIndex, locolizedTitle: locolizedTitle)
 		self.section = section
 		self.delegate = delegate
 	}
 
-	public func setup(_ section: Section, atSectionIndex sectionIndex: Int) {
+	public func setup(_ section: Section,
+					  atSectionIndex sectionIndex: Int,
+					  locolizedTitle: String? = nil) {
 
 		title.text = section.title
 		subTitle.text = section.subTitle
@@ -94,7 +99,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		if !section.viewpoints.isEmpty && section.viewpoints.count > 1 {
 
 			viewpoint.isHidden = false
-			let attributedString = NSAttributedString(string: "Video \(section.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.regular)])
+			let attributedString = NSAttributedString(string: "\(locolizedTitle ?? "Video") \(section.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.regular)])
 			viewpoint.setAttributedTitle(attributedString, for: .normal)
 		}
 	}

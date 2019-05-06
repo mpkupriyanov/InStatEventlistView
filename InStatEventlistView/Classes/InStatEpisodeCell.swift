@@ -104,14 +104,17 @@ open class InStatEpisodeCell: UITableViewCell {
 
 	public func setup(_ row: Row,
 					  atIndexPath indexPath: IndexPath,
-					  andDelegate delegate: InStatEpisodeCellDelegate) {
+					  andDelegate delegate: InStatEpisodeCellDelegate,
+					  locolizedTitle: String?) {
 
-		setup(row, atIndexPath: indexPath)
+		setup(row, atIndexPath: indexPath, locolizedTitle: locolizedTitle)
 		self.delegate = delegate
 		setupUIComponents()
 	}
 
-	public func setup(_ row: Row, atIndexPath indexPath: IndexPath) {
+	public func setup(_ row: Row,
+					  atIndexPath indexPath: IndexPath,
+					  locolizedTitle: String? = nil) {
 
 		timeRange.text = row.timeRange
 		selection.isSelected = row.isSelection
@@ -130,7 +133,7 @@ open class InStatEpisodeCell: UITableViewCell {
 		if !row.viewpoints.isEmpty && row.viewpoints.count > 1 {
 
 			viewpoint.isHidden = false
-			let attributedString = NSAttributedString(string: "Video \(row.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: .regular)])
+			let attributedString = NSAttributedString(string: "\(locolizedTitle ?? "Video") \(row.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: .regular)])
 			viewpoint.setAttributedTitle(attributedString, for: .normal)
 		}
 	}

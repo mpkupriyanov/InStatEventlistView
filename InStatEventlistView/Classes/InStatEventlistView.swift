@@ -20,6 +20,10 @@ public protocol InStatEventlistViewDelegate: class {
 	func eventlistView(_ eventlistView: InStatEventlistView, didShare item: Row, at indexPath: IndexPath)
 	func eventlistView(_ eventlistView: InStatEventlistView, didDownload item: Row, at indexPath: IndexPath)
 	func eventlistView(_ eventlistView: InStatEventlistView, didChangePlaySelectionState state: Bool, forItem item: Row, at indexPath: IndexPath)
+	func setLocolizedTitleDoneButton(_ eventlistView: InStatEventlistView) -> String?
+	func setLocolizedTitleCancelButton(_ eventlistView: InStatEventlistView) -> String?
+	func setLocolizedTitlePickerItem(_ eventlistView: InStatEventlistView) -> String?
+
 }
 
 open class InStatEventlistView: UIView {
@@ -98,7 +102,8 @@ open class InStatEventlistView: UIView {
 
 			guard let cell = self.tableView.cellForRow(at: indexPath) as? InStatEpisodeCell else { return }
 			let row = events[indexPath.section].rows[indexPath.row]
-			cell.setup(row, atIndexPath: indexPath)
+			let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
+			cell.setup(row, atIndexPath: indexPath, locolizedTitle: locolizedTitle)
 		}
 	}
 
@@ -106,7 +111,8 @@ open class InStatEventlistView: UIView {
 
 		guard let cell = tableView.headerView(forSection: sectionIndex) as? InStatEventCell else { return }
 		let section = events[sectionIndex]
-		cell.setup(section, atSectionIndex: sectionIndex)
+		let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
+		cell.setup(section, atSectionIndex: sectionIndex, locolizedTitle: locolizedTitle)
 
 		var indexPaths: [IndexPath] = []
 		for i in 0..<events[sectionIndex].rows.count {
@@ -141,8 +147,9 @@ extension InStatEventlistView: UITableViewDataSource {
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
 		let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: InStatEpisodeCell.self)) as! InStatEpisodeCell
+		let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
 		let row = events[indexPath.section].rows[indexPath.row]
-		cell.setup(row, atIndexPath: indexPath, andDelegate: self)
+		cell.setup(row, atIndexPath: indexPath, andDelegate: self, locolizedTitle: locolizedTitle)
 		return cell
 	}
 }
@@ -156,7 +163,8 @@ extension InStatEventlistView: UITableViewDelegate {
 		guard let cell = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: InStatEventCell.self)) as? InStatEventCell  else { return UIView() }
 		let sectionIndex = section
 		let section = events[sectionIndex]
-		cell.setup(section, atSectionIndex: sectionIndex, andDelegate: self)
+		let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
+		cell.setup(section, atSectionIndex: sectionIndex, andDelegate: self, locolizedTitle: locolizedTitle)
 		return cell
 	}
 
@@ -187,12 +195,15 @@ extension InStatEventlistView: InStatEventCellDelegate {
 		let indexPath = IndexPath(row: 0, section: sectionIndex)
 		for i in 0..<section.viewpoints.count {
 
-			let title = "Video" + " \(i + 1)"
+			let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
+			let title = locolizedTitle + " \(i + 1)"
 			let row: Row? = nil
 			let element = (title, section, row, true, indexPath)
 			pickerData.append(element)
 		}
 
+		pickerPort.doneTitle = delegate?.setLocolizedTitleDoneButton(self) ?? "Done"
+		pickerPort.cancelTitle = delegate?.setLocolizedTitleCancelButton(self) ?? "Cancel"
 		pickerPort.setData(pickerData, delegate: self)
 		pickerPort.openPickerView()
 	}
@@ -234,13 +245,16 @@ extension InStatEventlistView: InStatEpisodeCellDelegate {
 
 		for i in 0..<item.viewpoints.count {
 
-			let title = "Video" + " \(i + 1)"
+			let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
+			let title = locolizedTitle + " \(i + 1)"
 			let section = events[indexPath.section]
 			let row: Row? = item
 			let element = (title, section, row, false, indexPath)
 			pickerData.append(element)
 		}
 
+		pickerPort.doneTitle = delegate?.setLocolizedTitleDoneButton(self) ?? "Done"
+		pickerPort.cancelTitle = delegate?.setLocolizedTitleCancelButton(self) ?? "Cancel"
 		pickerPort.setData(pickerData, delegate: self)
 		pickerPort.openPickerView()
 	}

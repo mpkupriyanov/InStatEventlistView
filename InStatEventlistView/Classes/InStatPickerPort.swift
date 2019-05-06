@@ -59,6 +59,25 @@ open class InStatPickerPort: NSObject {
 		setGesture()
 	}
 
+	public var doneTitle: String = "Done" {
+		didSet {
+			if let button = doneButton.customView as? UIButton {
+				button.setTitle(doneTitle, for: .normal)
+			}
+		}
+	}
+
+	public var cancelTitle: String = "Cancel" {
+		didSet {
+			if let button = cancelButton.customView as? UIButton {
+				button.setTitle(cancelTitle, for: .normal)
+			}
+		}
+	}
+
+	var doneButton: UIBarButtonItem!
+	var cancelButton: UIBarButtonItem!
+
 	fileprivate func setGesture() {
 
 		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(cancel))
@@ -75,9 +94,9 @@ open class InStatPickerPort: NSObject {
 
 	fileprivate func setupToolBar() {
 
-		let doneButton = createBarButtonItem(title: "Done" ,
+		doneButton = createBarButtonItem(title: doneTitle ,
 											 selector: #selector(done))
-		let cancelButton = createBarButtonItem(title: "Cancel" ,
+		cancelButton = createBarButtonItem(title: cancelTitle ,
 											   selector: #selector(cancel))
 		let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 		let toolBar = UIToolbar()

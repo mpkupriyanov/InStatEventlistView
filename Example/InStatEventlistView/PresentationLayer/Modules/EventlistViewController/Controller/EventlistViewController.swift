@@ -82,6 +82,18 @@ extension EventlistViewController: InStatEventlistViewDataSource {
 
 extension EventlistViewController: InStatEventlistViewDelegate {
 
+	func setLocolizedTitleDoneButton(_ eventlistView: InStatEventlistView) -> String? {
+		return "Готово"
+	}
+
+	func setLocolizedTitleCancelButton(_ eventlistView: InStatEventlistView) -> String? {
+		return "Отмена"
+	}
+
+	func setLocolizedTitlePickerItem(_ eventlistView: InStatEventlistView) -> String? {
+		return "Видео"
+	}
+
 	func eventlistView(_ eventlistView: InStatEventlistView, heightForHeaderInSection section: Int) -> CGFloat {
 		return 44
 	}
