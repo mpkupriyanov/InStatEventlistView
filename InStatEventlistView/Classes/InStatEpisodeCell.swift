@@ -209,6 +209,12 @@ open class InStatEpisodeCell: UITableViewCell {
 		timeRange.rightAnchor.constraint(lessThanOrEqualTo: viewpoint.leftAnchor, constant: 5).isActive = true
 	}
 
+    // MARK: - PlayButtonState
+    
+    public func changePlayButtonState() {
+        playbutton.isSelected = false
+    }
+    
 	// MARK: - Helpers
 
 	fileprivate func imageResourcePath(_ name: String) -> UIImage? {

@@ -82,6 +82,11 @@ open class InStatEventlistView: UIView {
 		tableView.selectRow(at: indexPath, animated: animated, scrollPosition: position)
 	}
 
+    public func changePlayButtonState(at indexPath: IndexPath) {
+        guard let cell = self.tableView.cellForRow(at: indexPath) as? InStatEpisodeCell else { return }
+        cell.changePlayButtonState()
+    }
+    
 	fileprivate func setupTableView() {
 
 		tableView = UITableView(frame: .zero, style: .plain)
