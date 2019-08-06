@@ -3,7 +3,6 @@
 //  InStatEventlistView
 //
 
-import Foundation
 import UIKit
 
 public protocol InStatPickerPortDelegate: class {

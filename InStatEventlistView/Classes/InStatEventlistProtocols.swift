@@ -3,8 +3,6 @@
 //  InStatEventlistView
 //
 
-import Foundation
-
 public enum Permission {
 
 	case Allow
