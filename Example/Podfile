@@ -3,7 +3,7 @@ use_frameworks!
 
 target 'InStatEventlistView_Example' do
   pod 'InStatEventlistView' , :path => '../'
-	pod 'InStatDownloadButton'
+	pod 'InStatDownloadButton', :git => 'https://github.com/mpkupriyanov/InStatDownloadButton.git'
 
   target 'InStatEventlistView_Tests' do
     inherit! :search_paths

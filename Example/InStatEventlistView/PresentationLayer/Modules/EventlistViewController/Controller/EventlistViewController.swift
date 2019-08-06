@@ -15,6 +15,7 @@ class EventlistViewController: UIViewController {
 	fileprivate lazy var eventlistView: InStatEventlistView = {
 
 		let eventlist = InStatEventlistView()
+        eventlist.playButtonColor = .red
 		eventlist.dataSource = self
 		eventlist.delegate = self
 		eventlist.translatesAutoresizingMaskIntoConstraints = false

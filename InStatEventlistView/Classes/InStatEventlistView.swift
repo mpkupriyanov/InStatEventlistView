@@ -35,7 +35,8 @@ open class InStatEventlistView: UIView {
 	public weak var dataSource: InStatEventlistViewDataSource?
 	public weak var delegate: InStatEventlistViewDelegate?
 	fileprivate var pickerPort: InStatPickerPort!
-
+    public var playButtonColor: UIColor?
+    
 	// MARK: - Init
 
 	override init(frame: CGRect) {
@@ -152,6 +153,7 @@ extension InStatEventlistView: UITableViewDataSource {
 	public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
 		let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: InStatEpisodeCell.self)) as! InStatEpisodeCell
+        cell.playButtonColor = playButtonColor
 		let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
 		let row = events[indexPath.section].rows[indexPath.row]
 		cell.setup(row, atIndexPath: indexPath, andDelegate: self, locolizedTitle: locolizedTitle)

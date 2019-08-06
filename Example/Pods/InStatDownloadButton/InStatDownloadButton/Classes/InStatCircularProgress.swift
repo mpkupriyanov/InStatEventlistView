@@ -5,7 +5,7 @@
 
 import UIKit
 
-public class InStatCircularProgress: UIView, CAAnimationDelegate {
+public class InStatCircularProgress: UIButton, CAAnimationDelegate {
 
 	private let stopLayer: CALayer = CALayer()
 
@@ -104,9 +104,31 @@ public class InStatCircularProgress: UIView, CAAnimationDelegate {
 		}
 	}
 
+	/// background color for stop layer
 	public var stopColor: CGColor = UIColor.blue.cgColor {
 		didSet {
 			stopLayer.backgroundColor = stopColor
+			stopLayer.setNeedsDisplay()
+		}
+	}
+
+    /// fixed corner radius for stop layer
+    public var stopCornerRadius: CGFloat? {
+        didSet {
+            stopLayer.setNeedsDisplay()
+        }
+    }
+    
+    /// fixed size for stop layer
+    public var stopSize: CGSize? {
+        didSet {
+            stopLayer.setNeedsDisplay()
+        }
+    }
+
+	/// dimension is relative (%)
+	public var stopRelativeSize: CGFloat? {
+		didSet {
 			stopLayer.setNeedsDisplay()
 		}
 	}
@@ -267,13 +289,38 @@ public class InStatCircularProgress: UIView, CAAnimationDelegate {
 		progressLayer.setNeedsDisplay()
 	}
 
-	func setupStopLayer() {
+	private func setupStopLayer() {
 
 		stopLayer.backgroundColor = Color.Blue.medium.cgColor
 		stopLayer.borderWidth = 0
-		stopLayer.frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: frame.width * 0.3, height: frame.height * 0.3)
-		stopLayer.cornerRadius = stopLayer.frame.width * 0.15
+        configureStopSize()
+        configureStopCornerRadius()
 		stopLayer.position = center
 		stopLayer.backgroundColor = stopColor
 	}
+    
+    private func configureStopSize() {
+        
+        var frame = self.frame
+        if let size = stopSize {
+            frame.size = size
+            stopLayer.frame = frame
+		} else if let relativeSize = stopRelativeSize {
+			frame.size = CGSize(width: (frame.width * relativeSize) / 100, height: (frame.height * relativeSize) / 100)
+			stopLayer.frame = frame
+		} else {
+            frame.size = CGSize(width: frame.width * 0.3, height: frame.height * 0.3)
+            stopLayer.frame = frame
+        }
+    }
+    
+    private func configureStopCornerRadius() {
+        
+        if let cornerRadius = stopCornerRadius {
+            stopLayer.cornerRadius = cornerRadius
+        } else {
+            stopLayer.cornerRadius = stopLayer.frame.width * 0.15
+        }
+    }
+
 }

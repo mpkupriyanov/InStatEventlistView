@@ -5,7 +5,7 @@
 
 import UIKit
 
-public class InStatPendingIndicator: UIView, CAAnimationDelegate {
+public class InStatPendingIndicator: UIButton, CAAnimationDelegate {
 
 	private var progressLayer: InStatCircularProgressViewLayer {
 		get {

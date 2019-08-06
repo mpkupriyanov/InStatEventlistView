@@ -22,11 +22,15 @@ open class InStatEpisodeCell: UITableViewCell {
 	weak var delegate: InStatEpisodeCellDelegate?
 	fileprivate var indexPath: IndexPath!
 	fileprivate var item: Row!
-
+    var playButtonColor: UIColor?
+    
 	fileprivate lazy var playbutton: UIButton = {
 
 		let button = UIButton(type: .custom)
 		button.translatesAutoresizingMaskIntoConstraints = false
+        if let color = playButtonColor {
+            button.tintColor = color
+        }
 		button.setImage(imageResourcePath("Playlist"), for: .normal)
 		button.setImage(imageResourcePath("PlaylistPause"), for: .selected)
 		button.addTarget(self, action: #selector(playDidPress), for: .touchUpInside)

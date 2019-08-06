@@ -14,6 +14,7 @@ public class InStatDownloadButton: UIButton {
 	public var downloadState: InStatDownloadButtonState = .start {
 		didSet {
 
+            isHidden = false
 			switch downloadState {
 			case .start:
 				isEnabled = true
@@ -54,7 +55,7 @@ public class InStatDownloadButton: UIButton {
 
 	// MARK: - UI
 
-	public var progressView: InStatCircularProgress = {
+	public lazy var progressView: InStatCircularProgress = {
 
 		let view = InStatCircularProgress()
 		view.translatesAutoresizingMaskIntoConstraints = false
@@ -64,10 +65,11 @@ public class InStatDownloadButton: UIButton {
 		view.clockwise = true
 		view.set(colors: Color.Blue.medium)
 		view.trackColor = Color.Gray.medium
+		view.addTarget(self, action: #selector(progressDidPress), for: .touchUpInside)
 		return view
 	}()
 
-	public let indicatorView: InStatPendingIndicator = {
+	public lazy var indicatorView: InStatPendingIndicator = {
 
 		let view = InStatPendingIndicator()
 		view.translatesAutoresizingMaskIntoConstraints = false
@@ -76,11 +78,11 @@ public class InStatDownloadButton: UIButton {
 		view.progressThickness = 0.4
 		view.trackThickness = 0.4
 		view.set(colors: Color.Gray.dark)
+		view.addTarget(self, action: #selector(indicatorDidPress), for: .touchUpInside)
 		return view
 	}()
 
 	fileprivate var image: UIImage?
-
 
 	// MARK: - Init
 
@@ -106,5 +108,13 @@ public class InStatDownloadButton: UIButton {
 		progressView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
 		progressView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
 		progressView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+	}
+
+	@objc func progressDidPress() {
+		self.sendActions(for: .touchUpInside)
+	}
+
+	@objc func indicatorDidPress() {
+		self.sendActions(for: .touchUpInside)
 	}
 }
