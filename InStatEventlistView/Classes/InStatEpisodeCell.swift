@@ -124,18 +124,17 @@ open class InStatEpisodeCell: UITableViewCell {
 		selection.isSelected = row.isSelection
 		item = row
 		self.indexPath = indexPath
-		downloadButton.isHidden = row.isDownloaded
-
+        
 		if row.isControlsHidden {
-
 			downloadButton.isHidden = row.isControlsHidden
 			shareButton.isHidden = row.isControlsHidden
 			selection.isHidden = row.isControlsHidden
 		}
-
+        downloadButton.downloadState = .start
+        downloadButton.isHidden = row.isDownloaded
+        
 		// if viewpoints are empty or equal to 1 should hide viewpoint button
 		if !row.viewpoints.isEmpty && row.viewpoints.count > 1 {
-
 			viewpoint.isHidden = false
 			let attributedString = NSAttributedString(string: "\(locolizedTitle ?? "Video") \(row.viewpointIndex + 1)", attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 10, weight: .regular)])
 			viewpoint.setAttributedTitle(attributedString, for: .normal)
