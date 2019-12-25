@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'InStatEventlistView'
-  s.version          = '2.1.3'
+  s.version          = '2.1.4'
   s.summary          = 'InStatEventlistView - custom table'
 
 # This description is used to generate tags and improve search results.
