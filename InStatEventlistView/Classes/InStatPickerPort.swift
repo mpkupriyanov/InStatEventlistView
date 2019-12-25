@@ -51,7 +51,7 @@ open class InStatPickerPort: NSObject {
 													height: 216))
 		self.pickerView.delegate = self
 		self.pickerView.dataSource = self
-		self.pickerView.backgroundColor = UIColor.white
+		self.pickerView.backgroundColor = .dtMainBackgroundColor
 		fakeTextField.inputView = self.pickerView
 
 		setupToolBar()
@@ -99,7 +99,7 @@ open class InStatPickerPort: NSObject {
 											   selector: #selector(cancel))
 		let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
 		let toolBar = UIToolbar()
-		toolBar.tintColor = .black
+		toolBar.tintColor = .dtDarkTextColor
 		toolBar.items = [cancelButton, flexSpace, doneButton]
 		toolBar.sizeToFit()
 

@@ -55,6 +55,7 @@ open class InStatEpisodeCell: UITableViewCell {
 		button.addTarget(self, action: #selector(viewpointDidPress), for: .touchUpInside)
 		button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
 		button.isHidden = true
+        button.tintColor = .dtDarkTextColor
 		return button
 	}()
 
@@ -64,7 +65,7 @@ open class InStatEpisodeCell: UITableViewCell {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("download_video"), for: .normal)
 		button.addTarget(self, action: #selector(downloadDidPress), for: .touchUpInside)
-		button.tintColor = .black
+		button.tintColor = .dtDarkTextColor
 		return button
 	}()
 
@@ -74,7 +75,7 @@ open class InStatEpisodeCell: UITableViewCell {
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setImage(imageResourcePath("share_episode"), for: .normal)
 		button.addTarget(self, action: #selector(shareDidPress), for: .touchUpInside)
-		button.tintColor = .black
+		button.tintColor = .dtDarkTextColor
 		return button
 	}()
 
@@ -85,7 +86,7 @@ open class InStatEpisodeCell: UITableViewCell {
 		button.setImage(imageResourcePath("unchecked"), for: .normal)
 		button.setImage(imageResourcePath("checked"), for: .selected)
 		button.addTarget(self, action: #selector(checkDidPress), for: .touchUpInside)
-		button.tintColor = .black
+		button.tintColor = .dtDarkTextColor
 		return button
 	}()
 
@@ -101,7 +102,7 @@ open class InStatEpisodeCell: UITableViewCell {
 	open override func layoutSubviews() {
 		super.layoutSubviews()
 
-		backgroundColor = UIColor.init(red: 232/255.0, green: 232/255.0, blue: 232/255.0, alpha: 1)
+        backgroundColor = .dtHeaderViewBackgroundColor
 	}
 
 	// MARK: - Setup data
@@ -151,6 +152,7 @@ open class InStatEpisodeCell: UITableViewCell {
 		setupViewpoint()
 		setupPlay()
 		setupTimeRange()
+        setupColors()
 	}
 
 	fileprivate func setupSelection() {
@@ -212,6 +214,10 @@ open class InStatEpisodeCell: UITableViewCell {
 		timeRange.rightAnchor.constraint(lessThanOrEqualTo: viewpoint.leftAnchor, constant: 5).isActive = true
 	}
 
+    fileprivate func setupColors() {
+        contentView.backgroundColor = .dtHeaderViewBackgroundColor
+    }
+    
     // MARK: - PlayButtonState
     
     public func changePlayButtonState() {

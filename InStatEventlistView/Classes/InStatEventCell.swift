@@ -25,7 +25,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.font = UIFont.boldSystemFont(ofSize: 15)
 		label.textAlignment = .center
-		label.textColor = .black
+		label.textColor = .dtDarkTextColor
 		return label
 	}()
 
@@ -48,6 +48,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		button.isHidden = true
 		button.contentHorizontalAlignment = .left
 		button.imageEdgeInsets = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0)
+        button.tintColor = .dtDarkTextColor
 		return button
 	}()
 
@@ -58,7 +59,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		button.setImage(imageResourcePath("unchecked"), for: .normal)
 		button.setImage(imageResourcePath("checked"), for: .selected)
 		button.addTarget(self, action: #selector(checkDidPress), for: .touchUpInside)
-		button.tintColor = .black
+		button.tintColor = .dtDarkTextColor
 		return button
 	}()
 
@@ -112,6 +113,7 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		setupViewpoint()
 		setupTitle()
 		setupSubTitle()
+        setupColors()
 	}
 
 	fileprivate func setupSelection() {
@@ -153,6 +155,10 @@ open class InStatEventCell: UITableViewHeaderFooterView {
 		return UIImage(named: name, in: bundle, compatibleWith: nil)
 	}
 
+    fileprivate func setupColors() {
+        contentView.backgroundColor = .dtGrayBackgroundColor
+    }
+    
 	// MARK: - Actions
 
 	@objc fileprivate func checkDidPress() {
