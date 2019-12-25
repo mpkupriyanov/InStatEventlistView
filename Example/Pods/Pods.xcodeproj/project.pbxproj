@@ -675,6 +675,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.1.4;
 				MODULEMAP_FILE = "Target Support Files/InStatEventlistView/InStatEventlistView.modulemap";
 				PRODUCT_MODULE_NAME = InStatEventlistView;
 				PRODUCT_NAME = InStatEventlistView;
@@ -966,6 +967,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.1.4;
 				MODULEMAP_FILE = "Target Support Files/InStatEventlistView/InStatEventlistView.modulemap";
 				PRODUCT_MODULE_NAME = InStatEventlistView;
 				PRODUCT_NAME = InStatEventlistView;
