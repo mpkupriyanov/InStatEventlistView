@@ -9,6 +9,10 @@ public enum Permission {
 	case Deny
 }
 
+public enum DownloadStatus {
+    case readyToDownload, pending, cancel, downloading(Float), downloaded
+}
+
 public protocol Row {
 
 	var id: Int { get set }
@@ -18,6 +22,7 @@ public protocol Row {
 	var viewpointIndex: Int { get set }
 	var isDownloaded: Bool { get set }
 	var isControlsHidden: Bool { get set }
+    var downloadStatus: DownloadStatus { get set }
 }
 
 public protocol Section {

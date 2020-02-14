@@ -92,17 +92,22 @@ open class InStatEpisodeCell: UITableViewCell {
 
 	// MARK: - Life cycle
 
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        setupUIComponents()
+        backgroundColor = .dtHeaderViewBackgroundColor
+    }
+    
+    required public init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 	override open func setSelected(_ selected: Bool, animated: Bool) {
 		super.setSelected(selected, animated: animated)
 
 		playbutton.isHidden = !selected
 		playbutton.isSelected = selected
-	}
-
-	open override func layoutSubviews() {
-		super.layoutSubviews()
-
-        backgroundColor = .dtHeaderViewBackgroundColor
 	}
 
 	// MARK: - Setup data
@@ -112,14 +117,13 @@ open class InStatEpisodeCell: UITableViewCell {
 					  andDelegate delegate: InStatEpisodeCellDelegate,
 					  locolizedTitle: String?) {
 
-		setup(row, atIndexPath: indexPath, locolizedTitle: locolizedTitle)
+		configure(row, atIndexPath: indexPath, locolizedTitle: locolizedTitle)
 		self.delegate = delegate
-		setupUIComponents()
 	}
 
-	public func setup(_ row: Row,
-					  atIndexPath indexPath: IndexPath,
-					  locolizedTitle: String? = nil) {
+	public func configure(_ row: Row,
+                          atIndexPath indexPath: IndexPath,
+                          locolizedTitle: String? = nil) {
 
 		timeRange.text = row.timeRange
 		selection.isSelected = row.isSelection
@@ -131,8 +135,22 @@ open class InStatEpisodeCell: UITableViewCell {
 			shareButton.isHidden = row.isControlsHidden
 			selection.isHidden = row.isControlsHidden
 		}
-        downloadButton.downloadState = .start
+        
         downloadButton.isHidden = row.isDownloaded
+        
+        switch row.downloadStatus {
+        case .readyToDownload:
+            downloadButton.downloadState = .start
+        case .pending:
+            downloadButton.downloadState = .pending
+        case .cancel:
+            downloadButton.downloadState = .stop
+        case .downloading(let progress):
+            downloadButton.downloadState = .downloading
+            downloadButton.progressView.angle = Double(progress * 360)
+        case .downloaded:
+            downloadButton.downloadState = .finish
+        }
         
 		// if viewpoints are empty or equal to 1 should hide viewpoint button
 		if !row.viewpoints.isEmpty && row.viewpoints.count > 1 {

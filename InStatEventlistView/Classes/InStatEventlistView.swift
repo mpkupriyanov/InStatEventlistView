@@ -109,7 +109,7 @@ open class InStatEventlistView: UIView {
 			guard let cell = self.tableView.cellForRow(at: indexPath) as? InStatEpisodeCell else { return }
 			let row = events[indexPath.section].rows[indexPath.row]
 			let locolizedTitle = delegate?.setLocolizedTitlePickerItem(self) ?? "Video"
-			cell.setup(row, atIndexPath: indexPath, locolizedTitle: locolizedTitle)
+			cell.configure(row, atIndexPath: indexPath, locolizedTitle: locolizedTitle)
 		}
 	}
 
